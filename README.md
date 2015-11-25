@@ -12,6 +12,7 @@ Playing with hackerrank.com challenges for fun and world peace ([my profile](htt
   * Chocolate Feast: [Problem](https://www.hackerrank.com/challenges/chocolate-feast) - [Solution](src/main/java/hackrank/algorithm/implement/chocolate/Solution.java)
   * Caesar Cipher: [Problem](https://www.hackerrank.com/challenges/caesar-cipher-1) - [Solution](src/main/java/hackrank/algorithm/implement/caesar/Solution.java)
 2. Strings
+  * Funny String: [Problem](https://www.hackerrank.com/challenges/funny-string) - [Solution](src/main/java/hackrank/algorithm/string/funny/Solution.java)
   * Pangrams: [Problem](https://www.hackerrank.com/challenges/pangrams) - [Solution](src/main/java/hackrank/algorithm/string/pangram/Solution.java)
  
 <!---
