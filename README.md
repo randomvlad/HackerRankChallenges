@@ -1,5 +1,5 @@
 # Hacker Rank Challenges
-Playing with hackerrank.com challenges for fun and world peace ([my profile](https://www.hackerrank.com/EvilNerdyOwl)).
+Playing with [hackerrank.com](https://www.hackerrank.com) challenges for fun and world peace ([my profile](https://www.hackerrank.com/EvilNerdyOwl)).
 
 ## Algorithms
 1. Implementation
