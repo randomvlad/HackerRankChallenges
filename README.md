@@ -15,6 +15,7 @@ Playing with [hackerrank.com](https://www.hackerrank.com) challenges for fun and
   * Funny String: [Problem](https://www.hackerrank.com/challenges/funny-string) - [Solution](src/main/java/hackrank/algorithm/string/funny/Solution.java)
   * Pangrams: [Problem](https://www.hackerrank.com/challenges/pangrams) - [Solution](src/main/java/hackrank/algorithm/string/pangram/Solution.java)
   * Alternating Characters: [Problem](https://www.hackerrank.com/challenges/alternating-characters) - [Solution](src/main/java/hackrank/algorithm/string/alternate/Solution.java)
+  * Two Strings: [Problem](https://www.hackerrank.com/challenges/two-strings) - [Solution](src/main/java/hackrank/algorithm/string/two/Solution.java)
   * Sherlock and Valid Strings: [Problem](https://www.hackerrank.com/challenges/sherlock-and-valid-string) - [Solution](src/main/java/hackrank/algorithm/string/sherlock/Solution.java)
  
 <!---
