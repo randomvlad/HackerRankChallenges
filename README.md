@@ -17,7 +17,8 @@ Playing with [hackerrank.com](https://www.hackerrank.com) challenges for fun and
   * Alternating Characters: [Problem](https://www.hackerrank.com/challenges/alternating-characters) - [Solution](src/main/java/hackrank/algorithm/string/alternate/Solution.java)
   * Two Strings: [Problem](https://www.hackerrank.com/challenges/two-strings) - [Solution](src/main/java/hackrank/algorithm/string/two/Solution.java)
   * Sherlock and Valid Strings: [Problem](https://www.hackerrank.com/challenges/sherlock-and-valid-string) - [Solution](src/main/java/hackrank/algorithm/string/sherlock/Solution.java)
-3. Sort
+3. Sorting
+  * Insertion Sort Part 1: [Problem](https://www.hackerrank.com/challenges/insertionsort1) - [Solution](src/main/java/hackrank/algorithm/sort/insert1/Solution.java)
   * Bigger is Greater: [Problem](https://www.hackerrank.com/challenges/bigger-is-greater) - [Solution](src/main/java/hackrank/algorithm/sort/bigger/Solution.java)  
  
 <!---
