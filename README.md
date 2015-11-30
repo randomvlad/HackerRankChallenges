@@ -20,6 +20,7 @@ Playing with [hackerrank.com](https://www.hackerrank.com) challenges for fun and
 3. Sorting
   * Insertion Sort Part 1: [Problem](https://www.hackerrank.com/challenges/insertionsort1) - [Solution](src/main/java/hackrank/algorithm/sort/insert1/Solution.java)
   * Insertion Sort Part 2: [Problem](https://www.hackerrank.com/challenges/insertionsort2) - [Solution](src/main/java/hackrank/algorithm/sort/insert2/Solution.java)  
+  * Running Time of Algorithms: [Problem](https://www.hackerrank.com/challenges/runningtime) - [Solution](src/main/java/hackrank/algorithm/sort/insertrun/Solution.java)  
   * Bigger is Greater: [Problem](https://www.hackerrank.com/challenges/bigger-is-greater) - [Solution](src/main/java/hackrank/algorithm/sort/bigger/Solution.java)  
  
 <!---
