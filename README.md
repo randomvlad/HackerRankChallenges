@@ -24,6 +24,7 @@ Playing with [hackerrank.com](https://www.hackerrank.com) challenges for fun and
   * Quicksort 2 Sorting: [Problem](https://www.hackerrank.com/challenges/quicksort2) - [Solution](src/main/java/hackrank/algorithm/sort/quick/Solution.java)    
   * Bigger is Greater: [Problem](https://www.hackerrank.com/challenges/bigger-is-greater) - [Solution](src/main/java/hackrank/algorithm/sort/bigger/Solution.java)
   * Counting Sort Part 1: [Problem](https://www.hackerrank.com/challenges/countingsort1) - [Solution](src/main/java/hackrank/algorithm/sort/count1/Solution.java)
+  * Counting Sort Part 2: [Problem](https://www.hackerrank.com/challenges/countingsort2) - [Solution](src/main/java/hackrank/algorithm/sort/count2/Solution.java)
 
 <!---
   * Template: [Problem]() - [Solution](src/main/java/hackrank/algorithm/implement/X/Solution.java)
