@@ -26,6 +26,7 @@ Playing with [hackerrank.com](https://www.hackerrank.com) challenges for fun and
   * Counting Sort Part 1: [Problem](https://www.hackerrank.com/challenges/countingsort1) - [Solution](src/main/java/hackrank/algorithm/sort/count1/Solution.java)
   * Counting Sort Part 2: [Problem](https://www.hackerrank.com/challenges/countingsort2) - [Solution](src/main/java/hackrank/algorithm/sort/count2/Solution.java)
   * Counting Sort Part 3: [Problem](https://www.hackerrank.com/challenges/countingsort3) - [Solution](src/main/java/hackrank/algorithm/sort/count3/Solution.java)
+  * Counting Sort Part 4: [Problem](https://www.hackerrank.com/challenges/countingsort4) - [Solution](src/main/java/hackrank/algorithm/sort/count4/Solution.java)
 
 <!---
   * Template: [Problem]() - [Solution](src/main/java/hackrank/algorithm/implement/X/Solution.java)
