@@ -3,7 +3,6 @@ package hackrank.algorithm.sort.quick;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 /**
  * Quicksort Challenge
@@ -13,24 +12,35 @@ import java.util.stream.Collectors;
 public class Solution {
 	
 	public static void main( String[] args ) {
-		
 		sort( readInput() );
-		
 	}
 	
-	private static List<Integer> sort( List<Integer> list ) {
-		if ( list.size() < 2 ) {
-			return list;
+	private static void sort( int[] array ) {
+		sort( array, 0, array.length );
+	}
+	
+	private static void sort( int[] array, int start, int end ) {
+		if( end - start <= 1 ) {
+			return;
 		}
 		
-		int pivot = list.get( 0 );
+		int pivotIndex = pivot( array, start, end );
 		
-		int maxSize = list.size() - 1;
+		sort( array, start, pivotIndex );
+		sort( array, pivotIndex + 1, end );
+		
+		System.out.println( toString( array, start, end ) );
+	}
+	
+	private static int pivot( int[] array, int start, int end ) {
+		int pivot = array[ start ];
+		
+		int maxSize = end - start - 1;
 		List<Integer> left = new ArrayList<>( maxSize );
 		List<Integer> right = new ArrayList<>( maxSize );
 		
-		for ( int i = 1; i < list.size(); i++ ) {
-			int number = list.get( i );
+		for ( int i = start + 1; i < end; i++ ) {
+			int number = array[ i ];
 			
 			if ( number < pivot ) {
 				left.add( number );
@@ -39,32 +49,43 @@ public class Solution {
 			}
 		}
 		
-		left = sort( left );
-		right = sort( right );
+		set( array, left, start );
 		
-		List<Integer> sorted = new ArrayList<>( list.size() );
+		int pivotIndex = start + left.size();
+		array[ pivotIndex ] = pivot;
 		
-		sorted.addAll( left );
-		sorted.add( pivot );
-		sorted.addAll( right );
+		set( array, right, pivotIndex + 1 );
 		
-		System.out.println( sorted.stream().map( i -> i.toString() ).collect( Collectors.joining( " " ) ) );
-		
-		return sorted;
+		return pivotIndex;
 	}
 	
-	private static List<Integer> readInput() {
+	private static void set( int[] array, List<Integer> newValues, int start ) {
+		for ( int value : newValues ) {
+			array[ start ] = value;
+			start++;
+		}
+	}
+	
+	private static int[] readInput() {
 		Scanner scanner = new Scanner( System.in );
-
+		
 		int length = scanner.nextInt();
-		List<Integer> list = new ArrayList<Integer>();
+		int[] array = new int[ length ];
 		for ( int i = 0; i < length; i++ ) {
-			list.add( scanner.nextInt() );
+			array[ i ] = scanner.nextInt();
 		}
 		
 		scanner.close();
 		
-		return list;
+		return array;
+	}
+	
+	private static String toString( int[] array, int start, int end ) {
+		StringBuilder sb = new StringBuilder();
+		for ( int i = start; i < end; i++ ) {
+			sb.append( array[ i ] + " "  );
+		}
+		return sb.toString();
 	}
 
 }
