@@ -13,6 +13,8 @@ import java.util.Scanner;
  * @see https://www.hackerrank.com/challenges/missing-numbers
  */
 public class Solution {
+	
+	public final static int MAX_UNIQUE_NUMBERS = 100;
 
 	public static void main( String[] args ) {
 		
@@ -21,7 +23,9 @@ public class Solution {
 		List<Integer> first = lists.get( 0 );
 		List<Integer> second = lists.get( 1 );
 		
-		Map<Integer,Integer> counts = new HashMap<>( second.size() );
+		// Input is guaranteed to have no more than 100 unique numbers
+		// Set HashMap load factor to 100% to avoid a needless internal rehash
+		Map<Integer,Integer> counts = new HashMap<>( MAX_UNIQUE_NUMBERS, 1.0f );
 		
 		for( int number : second ) {
 			
