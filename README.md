@@ -30,6 +30,7 @@ Playing with [hackerrank.com](https://www.hackerrank.com) challenges for fun and
   * Counting Sort Part 4: [Problem](https://www.hackerrank.com/challenges/countingsort4) - [Solution](src/main/java/hackrank/algorithm/sort/count4/Solution.java)
 4. Search
   * Sherlock and Array: [Problem](https://www.hackerrank.com/challenges/sherlock-and-array) - [Solution](src/main/java/hackrank/algorithm/search/sherlock/Solution.java)
+  * Missing Numbers: [Problem](https://www.hackerrank.com/challenges/missing-numbers) - [Solution](src/main/java/hackrank/algorithm/search/missing/Solution.java)
 
 <!---
   * Template: [Problem]() - [Solution](src/main/java/hackrank/algorithm/implement/X/Solution.java)
