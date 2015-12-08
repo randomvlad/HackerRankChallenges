@@ -31,6 +31,7 @@ Playing with [hackerrank.com](https://www.hackerrank.com) challenges for fun and
 4. Search
   * Sherlock and Array: [Problem](https://www.hackerrank.com/challenges/sherlock-and-array) - [Solution](src/main/java/hackrank/algorithm/search/sherlock/Solution.java)
   * Missing Numbers: [Problem](https://www.hackerrank.com/challenges/missing-numbers) - [Solution](src/main/java/hackrank/algorithm/search/missing/Solution.java)
+  * Cut the Tree: [Problem](https://www.hackerrank.com/challenges/cut-the-tree) - [Solution](src/main/java/hackrank/algorithm/search/cuttree/Solution.java)
 
 <!---
   * Template: [Problem]() - [Solution](src/main/java/hackrank/algorithm/implement/X/Solution.java)
