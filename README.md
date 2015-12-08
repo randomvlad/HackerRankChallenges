@@ -32,6 +32,8 @@ Playing with [hackerrank.com](https://www.hackerrank.com) challenges for fun and
   * Sherlock and Array: [Problem](https://www.hackerrank.com/challenges/sherlock-and-array) - [Solution](src/main/java/hackrank/algorithm/search/sherlock/Solution.java)
   * Missing Numbers: [Problem](https://www.hackerrank.com/challenges/missing-numbers) - [Solution](src/main/java/hackrank/algorithm/search/missing/Solution.java)
   * Cut the Tree: [Problem](https://www.hackerrank.com/challenges/cut-the-tree) - [Solution](src/main/java/hackrank/algorithm/search/cuttree/Solution.java)
+5. Dynamic Programming
+  * Fibonacci Modified: [Problem](https://www.hackerrank.com/challenges/fibonacci-modified) - [Solution](src/main/java/hackrank/algorithm/dynamic/fibmod/Solution.java)
 
 <!---
   * Template: [Problem]() - [Solution](src/main/java/hackrank/algorithm/implement/X/Solution.java)
