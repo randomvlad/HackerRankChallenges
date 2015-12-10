@@ -19,79 +19,43 @@ public class Solution {
 		}
 	}
 	
+	public static int findMaxSumContiguous( List<Integer> sequence ) {
+		int bestSum = Integer.MIN_VALUE;
+		int currentSum = 0;
+		
+		for ( int i = 0; i < sequence.size(); i++ ) {
+			int value = sequence.get( i );
+			
+			currentSum += value;
+			
+			if ( currentSum >= bestSum ) {
+				bestSum = currentSum;
+			} 
+			
+			if ( currentSum < 0 ) {
+				currentSum = 0;
+			}
+		}
+		
+		return bestSum;
+	}
+	
 	public static int findMaxSumNonContigious( List<Integer> sequence ) {
 		
-		// TODO: incorrect algorithm. Following sequence fails:
-		// -1 50 -1 99 -1 50 -1000 25 -1 100 -1 25. Wrong: 148, Correct: 197
-		
-		int maxNegative = Integer.MIN_VALUE;
+		int minNegative = Integer.MIN_VALUE;
 		int sum = 0;
 		
 		for ( int value : sequence ) {
 			if ( value > 0 ) {
 				sum += value;
 			} else {
-				if ( value > maxNegative ) {
-					maxNegative = value;
+				if ( value > minNegative ) {
+					minNegative = value;
 				}
 			}
 		}
 		
-		return sum > 0 ? sum : maxNegative;
-	}
-	
-	public static int findMaxSumContiguous( List<Integer> sequence ) {
-		int bestSum = Integer.MIN_VALUE;
-		int bestStart = 0;
-		int bestEnd = 0;
-		
-		int currentSum = 0;
-		int start = 0;
-		
-		for ( int i = 0; i < sequence.size(); i++ ) {
-			if ( currentSum <= 0 ) {
-				currentSum = 0;
-				start = i;
-			}
-			
-			currentSum += sequence.get( i );
-			
-			if ( currentSum >= bestSum ) {
-				bestSum = currentSum;
-				bestStart = start;
-				bestEnd = i;
-			} else {
-				currentSum = 0;
-			}
-		}
-		
-		int beforeIndex = bestStart - 1;
-		if ( beforeIndex >= 0 ) {
-			bestSum = findMaxSumContiguous( sequence, 0, beforeIndex, bestSum );	
-		}
-		
-		int afterIndex = bestEnd + 1;
-		if ( afterIndex < sequence.size() ) {
-			bestSum = findMaxSumContiguous( sequence, afterIndex, sequence.size() - 1, bestSum );	
-		}
-		
-		return bestSum;
-	}
-	
-	private static int findMaxSumContiguous( List<Integer> sequence, int start, int end, int sum ) {
-		int bestSum = sum;
-		int currentSum = sum;
-		
-		for ( int i = end; i >= start; i-- ) {
-			int value = sequence.get( i );
-			
-			currentSum += value;
-			if ( currentSum > bestSum ) {
-				bestSum = currentSum;
-			}
-		}
-		
-		return bestSum;
+		return sum > 0 ? sum : minNegative;
 	}
 	
 	public static List<List<Integer>> readInput() {
