@@ -1,8 +1,11 @@
 # Hacker Rank Challenges
-Playing with [hackerrank.com](https://www.hackerrank.com) challenges for fun and world peace ([my profile](https://www.hackerrank.com/EvilNerdyOwl)).
+
+Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. All solutions are coded in Java 8.
+
+Total problems solved: 31.
 
 ## Algorithms
-1. Implementation
+1. Implementation (8)
   * Angry Professor: [Problem](https://www.hackerrank.com/challenges/angry-professor) - [Solution](src/main/java/hackrank/algorithm/implement/angryprof/Solution.java)
   * Sherlock and The Beast: [Problem](https://www.hackerrank.com/challenges/sherlock-and-the-beast) - [Solution](src/main/java/hackrank/algorithm/implement/sherlock/Solution.java)
   * Utopian Tree: [Problem](https://www.hackerrank.com/challenges/utopian-tree) - [Solution](src/main/java/hackrank/algorithm/implement/utopian/Solution.java)
@@ -11,13 +14,13 @@ Playing with [hackerrank.com](https://www.hackerrank.com) challenges for fun and
   * Cut the Sticks: [Problem](https://www.hackerrank.com/challenges/cut-the-sticks) - [Solution](src/main/java/hackrank/algorithm/implement/stick/Solution.java)
   * Chocolate Feast: [Problem](https://www.hackerrank.com/challenges/chocolate-feast) - [Solution](src/main/java/hackrank/algorithm/implement/chocolate/Solution.java)
   * Caesar Cipher: [Problem](https://www.hackerrank.com/challenges/caesar-cipher-1) - [Solution](src/main/java/hackrank/algorithm/implement/caesar/Solution.java)
-2. Strings
+2. Strings (5)
   * Funny String: [Problem](https://www.hackerrank.com/challenges/funny-string) - [Solution](src/main/java/hackrank/algorithm/string/funny/Solution.java)
   * Pangrams: [Problem](https://www.hackerrank.com/challenges/pangrams) - [Solution](src/main/java/hackrank/algorithm/string/pangram/Solution.java)
   * Alternating Characters: [Problem](https://www.hackerrank.com/challenges/alternating-characters) - [Solution](src/main/java/hackrank/algorithm/string/alternate/Solution.java)
   * Two Strings: [Problem](https://www.hackerrank.com/challenges/two-strings) - [Solution](src/main/java/hackrank/algorithm/string/two/Solution.java)
   * Sherlock and Valid Strings: [Problem](https://www.hackerrank.com/challenges/sherlock-and-valid-string) - [Solution](src/main/java/hackrank/algorithm/string/sherlock/Solution.java)
-3. Sorting
+3. Sorting (10)
   * Insertion Sort Part 1: [Problem](https://www.hackerrank.com/challenges/insertionsort1) - [Solution](src/main/java/hackrank/algorithm/sort/insert1/Solution.java)
   * Insertion Sort Part 2: [Problem](https://www.hackerrank.com/challenges/insertionsort2) - [Solution](src/main/java/hackrank/algorithm/sort/insert2/Solution.java)  
   * Running Time of Algorithms: [Problem](https://www.hackerrank.com/challenges/runningtime) - [Solution](src/main/java/hackrank/algorithm/sort/insertrun/Solution.java)
@@ -28,15 +31,15 @@ Playing with [hackerrank.com](https://www.hackerrank.com) challenges for fun and
   * Counting Sort Part 2: [Problem](https://www.hackerrank.com/challenges/countingsort2) - [Solution](src/main/java/hackrank/algorithm/sort/count2/Solution.java)
   * Counting Sort Part 3: [Problem](https://www.hackerrank.com/challenges/countingsort3) - [Solution](src/main/java/hackrank/algorithm/sort/count3/Solution.java)
   * Counting Sort Part 4: [Problem](https://www.hackerrank.com/challenges/countingsort4) - [Solution](src/main/java/hackrank/algorithm/sort/count4/Solution.java)
-4. Search
+4. Search (4)
   * Sherlock and Array: [Problem](https://www.hackerrank.com/challenges/sherlock-and-array) - [Solution](src/main/java/hackrank/algorithm/search/sherlock/Solution.java)
   * Ice Cream Parlor: [Problem](https://www.hackerrank.com/challenges/icecream-parlor) - [Solution](src/main/java/hackrank/algorithm/search/icecream/Solution.java)  
   * Missing Numbers: [Problem](https://www.hackerrank.com/challenges/missing-numbers) - [Solution](src/main/java/hackrank/algorithm/search/missing/Solution.java)
   * Cut the Tree: [Problem](https://www.hackerrank.com/challenges/cut-the-tree) - [Solution](src/main/java/hackrank/algorithm/search/cuttree/Solution.java)
-5. Graph Theory
+5. Graph Theory (2)
   * Breadth Shortest Reach: [Problem](https://www.hackerrank.com/challenges/bfsshortreach) - [Solution](src/main/java/hackrank/algorithm/graph/bfsreach/Solution.java)
   * Snakes and Ladders: [Problem](https://www.hackerrank.com/challenges/the-quickest-way-up) - [Solution](src/main/java/hackrank/algorithm/graph/snake/Solution.java)
-6. Dynamic Programming
+6. Dynamic Programming (2)
   * Fibonacci Modified: [Problem](https://www.hackerrank.com/challenges/fibonacci-modified) - [Solution](src/main/java/hackrank/algorithm/dynamic/fibmod/Solution.java)
   * The Maximum Subarray: [Problem](https://www.hackerrank.com/challenges/maxsubarray) - [Solution](src/main/java/hackrank/algorithm/dynamic/maxsub/Solution.java)  
 
