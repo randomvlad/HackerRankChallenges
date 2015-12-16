@@ -1,5 +1,6 @@
 package hackrank.algorithm.graph.snake;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -17,15 +18,14 @@ public class Solution {
 	
 	public static void main( String[] args ) {
 		
-		// TODO: solution is not complete. fails for a unit test
-		
-		for ( Board board: readInput() ) {
+		for ( Board board: readInput( System.in ) ) {
 			System.out.println( board.calculateMoves( 1, 100 ) );
 		}
+		
 	}
 	
-	private static List<Board> readInput() {
-		Scanner scanner = new Scanner( System.in );
+	private static List<Board> readInput( InputStream input ) {
+		Scanner scanner = new Scanner( input );
 		
 		int testCases = scanner.nextInt();
 		
@@ -33,18 +33,18 @@ public class Solution {
 		for ( int i = 0; i < testCases; i++ ) {
 		
 			int numberLadders = scanner.nextInt();
-			int[][] ladders = new int[ numberLadders ][];
+			Map<Integer,Integer> ladders = new HashMap<>( numberLadders, 1.0f );
 			for ( int l = 0; l < numberLadders; l++ ) {
-				ladders[ l ] = new int[] { scanner.nextInt(), scanner.nextInt() };
+				ladders.put( scanner.nextInt(), scanner.nextInt() );
 			}
 			
 			int numberSnakes = scanner.nextInt();
-			int[][] snakes = new int[ numberSnakes ][];
+			Map<Integer,Integer> snakes = new HashMap<>( numberSnakes, 1.0f );
 			for ( int s = 0; s < numberSnakes; s++ ) {
-				snakes[ s ] = new int[]{ scanner.nextInt(), scanner.nextInt() };
+				snakes.put( scanner.nextInt(), scanner.nextInt() );
 			}
 			
-			boards.add( Board.create( ladders, snakes ) );
+			boards.add( new Board( ladders, snakes ) );
 		}
 		
 		scanner.close();
@@ -56,44 +56,65 @@ public class Solution {
 class Board {
 	
 	public Map<Integer,Square> squares;
+	public Map<Integer,Integer> ladders;
+	public Map<Integer,Integer> snakes;
 	
-	public static Board create( int[][] ladders, int[][] snakes ) {
-		int numberSquares = 100;
+	public Board( Map<Integer,Integer> ladders, Map<Integer,Integer> snakes ) { 
+		this( 100, ladders, snakes );
+	}
+	
+	public Board( int numberSquares, Map<Integer,Integer> ladders, Map<Integer,Integer> snakes ) {
+		this.squares = new HashMap<>( numberSquares, 1.0f );
+		this.ladders = ladders;
+		this.snakes = snakes;
 		
-		Board board = new Board( numberSquares );
+		initialize( numberSquares );
+	}
+	
+	private void initialize( int numberSquares ) {
 		
 		for ( int squareId = 1; squareId <= numberSquares; squareId++ ) {
-			board.add( squareId );
+			add( squareId );
 		}
 		
 		for ( int squareId = 1; squareId < numberSquares; squareId++ ) {
-			board.connect( squareId, (squareId + 1), 1, Square.Type.REGULAR );
+			connect( squareId, findNextSquares( squareId ) );			
 		}
-		
-		for ( int[] ladder : ladders ) {
-			board.connect(  ladder[ 0 ], ladder[ 1 ], 0, Square.Type.LADDER );
-		}
-		
-		for ( int[] snake : snakes ) {
-			board.connect( snake[ 0 ], snake[ 1 ], 0, Square.Type.SNAKE );
-		}
-		
-		return board;
 	}
 	
-	private Board( int numberSquares ) {
-		squares = new HashMap<>( numberSquares, 1.0f );
+	public List<Integer> findNextSquares( int startId ) {
+		List<Integer> next = new ArrayList<>();
+		
+		int max = startId + 6;
+		max = max > squares.size() ? squares.size() : max; 
+
+		for ( int id = startId + 1; id <= max; id++ ) {
+			if ( ladders.containsKey( id ) ) {
+				next.add( ladders.get( id ) );
+			} else if ( snakes.containsKey( id ) ) {
+				next.add( snakes.get( id ) );
+			} else {
+				next.add( id );
+			}
+		}
+		
+		return next;
 	}
 	
 	public void add( int squareId ) {
 		squares.put( squareId, new Square( squareId ) );
 	}
 	
-	public void connect( int idFrom, int idTo, int weight, Square.Type type ) {
+	public void connect( int idFrom, int idTo ) {
 		Square from = squares.get( idFrom );
 		Square to = squares.get( idTo );
-		from.connect( to, weight );
-		from.type = type;
+		from.connect( to, 1 );
+	}
+	
+	public void connect( int idFrom, List<Integer> idsTo ) {
+		for ( int idTo : idsTo ) {
+			connect( idFrom, idTo );
+		}
 	}
 	
 	private void computePaths( Square squareStart ) {
@@ -126,10 +147,13 @@ class Board {
 		
 		computePaths( start );
 		
-		Square end = squares.get( endId );
 		List<Square> path = new ArrayList<Square>();
-		for ( Square square = end; square != null; square = square.previous ) {
-			path.add( square );
+		Square end = squares.get( endId );
+		
+		if ( end.previous != null ) {
+			for ( Square square = end; square != null; square = square.previous ) {
+				path.add( square );
+			}	
 		}
 
 		Collections.reverse( path );
@@ -137,61 +161,13 @@ class Board {
 	}
 	
 	public int calculateMoves( int startId, int endId ) {
-		
-		List<Square> path = findPathTo( startId, endId );
-		
-		int moves = 0;
-		int steps = 0;
-		int consecutiveSnakes = 0;
-		
-		for ( int i = 0; i < path.size() - 1; i++ ) {
-			Square current = path.get( i );
-			Square next = path.get( i + 1 );
-			
-			if ( current.type == Square.Type.SNAKE ) {
-				consecutiveSnakes++;
-				if ( consecutiveSnakes == 6 ) {
-					return -1;
-				}
-			} else {
-				consecutiveSnakes = 0;
-			}
-			
-			int step = next.minDistance - current.minDistance;
-			if ( step == 0 ) {
-				if ( steps > 0 ) {
-					moves++;
-				}
-				steps = 0;
-				continue;
-			}
-			
-			steps += step;
-					
-			if ( steps > 1 && steps % 6 == 0 ) {
-				steps = 0;
-				moves++;
-			}
-		}
-		
-		if ( steps >= 1 ) {
-			moves++;
-		}
-		
-		return moves;
+		return findPathTo( startId, endId ).size() - 1;
 	}
 }
 
 class Square implements Comparable<Square> {
 	
-	enum Type {
-		SNAKE,
-		LADDER,
-		REGULAR
-	};
-	
 	public int id;
-	public Square.Type type;
 	public List<Connection> connections;
 	
 	public int minDistance = Integer.MAX_VALUE;
@@ -199,20 +175,11 @@ class Square implements Comparable<Square> {
 	
 	public Square( int id ) {
 		this.id = id;
-		this.type = Type.REGULAR;
 		this.connections = new ArrayList<>();
-	}
-	
-	public void connect( Square square ) {
-		connect( square, 1 );
 	}
 	
 	public void connect( Square square, int weight ) {
 		connections.add( new Connection( square, weight ) );
-	}
-	
-	public boolean hasShortcut() {
-		return connections.size() > 1;
 	}
 	
 	@Override

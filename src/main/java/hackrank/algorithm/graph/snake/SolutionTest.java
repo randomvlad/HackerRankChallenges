@@ -1,6 +1,9 @@
 package hackrank.algorithm.graph.snake;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import org.junit.Test;
 
@@ -25,7 +28,7 @@ public class SolutionTest {
 				{ 67, 17 },
 		};
 		
-		Board board = Board.create( ladders, snakes );
+		Board board = new Board( map( ladders ), map( snakes ) );
 		
 		assertEquals( 3, board.calculateMoves( 1, 100 ) );
 		
@@ -48,7 +51,7 @@ public class SolutionTest {
 				{ 77, 21 }
 		};
 		
-		Board board2 = Board.create( ladders2, snakes2 );
+		Board board2 = new Board( map( ladders2 ), map( snakes2 ) );
 		
 		assertEquals( 5, board2.calculateMoves( 1, 100 ) );		
 	}
@@ -63,7 +66,7 @@ public class SolutionTest {
 				{ 99, 1 }
 		};
 		
-		Board board = Board.create( ladders, snakes );
+		Board board = new Board( map( ladders ), map( snakes ) );
 		
 		assertEquals( 2, board.calculateMoves( 1, 100 ) );
 	}
@@ -80,7 +83,7 @@ public class SolutionTest {
 				{ 41, 20 }
 		};
 		
-		Board board = Board.create( ladders, snakes );
+		Board board = new Board( map( ladders ), map( snakes ) );
 		
 		assertEquals( 4, board.calculateMoves( 1, 100 ) );
 	}
@@ -101,7 +104,7 @@ public class SolutionTest {
 				{ 99, 14 }
 		};
 		
-		Board board = Board.create( ladders, snakes );
+		Board board = new Board( map( ladders ), map( snakes ) );
 		
 		assertEquals( -1, board.calculateMoves( 1, 100 ) );
 	}
@@ -121,9 +124,20 @@ public class SolutionTest {
 				{ 98, 86 }
 		};
 		
-		Board board = Board.create( ladders, snakes );
+		Board board = new Board( map( ladders ), map( snakes ) );
 		
 		assertEquals( 3, board.calculateMoves( 1, 100 ) );
+	}
+	
+	private Map<Integer,Integer> map( int[][] data ) {
+		
+		Map<Integer,Integer> map = new HashMap<>( data.length, 1.0f );
+		
+		for ( int[] row : data ) {
+			map.put( row[ 0 ], row[ 1 ] );			
+		}
+		
+		return map;
 	}
 
 }
