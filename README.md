@@ -34,6 +34,7 @@ Playing with [hackerrank.com](https://www.hackerrank.com) challenges for fun and
   * Missing Numbers: [Problem](https://www.hackerrank.com/challenges/missing-numbers) - [Solution](src/main/java/hackrank/algorithm/search/missing/Solution.java)
   * Cut the Tree: [Problem](https://www.hackerrank.com/challenges/cut-the-tree) - [Solution](src/main/java/hackrank/algorithm/search/cuttree/Solution.java)
 5. Graph Theory
+  * Breadth Shortest Reach: [Problem](https://www.hackerrank.com/challenges/bfsshortreach) - [Solution](src/main/java/hackrank/algorithm/graph/bfsreach/Solution.java)
   * Snakes and Ladders: [Problem](https://www.hackerrank.com/challenges/the-quickest-way-up) - [Solution](src/main/java/hackrank/algorithm/graph/snake/Solution.java)
 6. Dynamic Programming
   * Fibonacci Modified: [Problem](https://www.hackerrank.com/challenges/fibonacci-modified) - [Solution](src/main/java/hackrank/algorithm/dynamic/fibmod/Solution.java)
