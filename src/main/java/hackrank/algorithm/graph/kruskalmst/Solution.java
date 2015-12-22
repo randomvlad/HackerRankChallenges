@@ -2,13 +2,11 @@ package hackrank.algorithm.graph.kruskalmst;
 
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.PriorityQueue;
 import java.util.Scanner;
-import java.util.Set;
 
 /**
  * Kruskal (MST): Really Special Subtree
@@ -32,12 +30,10 @@ public class Solution {
 		for ( int e = 0; e < numberEdges; e++ ) {
 			edges[ e ] = new int[] { scanner.nextInt(), scanner.nextInt(), scanner.nextInt() };
 		}
-
-		int startNodeId = scanner.nextInt();
 		
 		scanner.close();
 		
-		return new Graph( numberNodes, edges, startNodeId );
+		return new Graph( numberNodes, edges );
 	}
 }
 
@@ -45,10 +41,10 @@ class Graph {
 
 	public Map<Integer, Node> nodes;
 	public List<Edge> edges;
-	public int startNodeId;
 
-	public Graph( int numberNodes, int[][] edges, int startNodeId ) {
+	public Graph( int numberNodes, int[][] edges ) {
 		this.nodes = new HashMap<>( numberNodes, 1.0f );
+		this.edges = new ArrayList<>( edges.length );
 
 		for ( int nodeId = 1; nodeId <= numberNodes; nodeId++ ) {
 			nodes.put( nodeId, new Node( nodeId ) );
@@ -57,83 +53,42 @@ class Graph {
 		for ( int[] edge : edges ) {
 			connect( edge[ 0 ], edge[ 1 ], edge[ 2 ] );
 		}
-
-		this.startNodeId = startNodeId;
 	}
 
 	public void connect( int idFrom, int idTo, int weight ) {
 		Node from = nodes.get( idFrom );
 		Node to = nodes.get( idTo );
-		
-		Edge edgeTo = new Edge( to, weight );
-		from.connect( edgeTo );
-		
-		Edge edgeFrom = new Edge( from, weight );
-		to.connect( edgeFrom );
-		
-		// TODO: keep concept of edge pairs to represent undirected connections? 
-		
-		edges.add( edgeTo );
-		edges.add( edgeFrom );
-		
-		from.connect( to, weight );
-		to.connect( from, weight );		
+		edges.add( new Edge( from, to, weight ) );
 	}
 	
 	public int findKruskalMinSpanWeight() {
 		
-		Node start = nodes.get( startNodeId );
-		
-		Set<Integer> visited = new HashSet<>( nodes.size() );		
-		visited.add( start.id );
-		
+		Collections.sort( edges );
+				
 		int totalEdgeWeight = 0;
+		UnionFind unionFind = new UnionFind();
 		
-		// pick min edge; if multiple then use nodeIdFrom + nodeIdTo + weight of edge
-		
-		/*
-		PriorityQueue<Edge> edgesQueue = new PriorityQueue<Edge>( start.edges );
-		
-		while ( !edgesQueue.isEmpty() ) {
-			Edge edge = edgesQueue.poll();
-			if ( visited.contains( edge.target.id ) ) {
-				continue;
-			}
+		for ( Edge edge : edges ) {
 			
-			totalEdgeWeight += edge.weight;
-			visited.add( edge.target.id );
-			
-			for ( Edge nextEdge : edge.target.edges ) {
-				if ( ! visited.contains( nextEdge.target.id ) ) {
-					edgesQueue.add( nextEdge );
-				}
+			if ( ! unionFind.isConnected( edge.from, edge.to ) ) {
+				totalEdgeWeight += edge.weight;
+				unionFind.union( edge.from, edge.to );	
 			}
 		}
-		*/
 		
 		return totalEdgeWeight;
 	}
-	
 }
 
 class Node {
 
 	public int id;
-	public List<Edge> edges;
+	public Node unionLead;
 
 	public Node( int id ) {
 		this.id = id;
-		this.edges = new ArrayList<>();
 	}
 	
-	public void connect( Edge edge ) {
-		edges.add( edge );
-	}
-
-	public void connect( Node square, int weight ) {
-		edges.add( new Edge( square, weight ) );
-	}
-
 	@Override
 	public String toString() {
 		return String.valueOf( id );
@@ -143,22 +98,88 @@ class Node {
 
 class Edge implements Comparable<Edge> {
 
-	public Node target;
+	public Node from;
+	public Node to;
 	public int weight;
 
-	public Edge( Node target, int weight ) {
-		this.target = target;
+	public Edge( Node from, Node to, int weight ) {
+		this.from = from;
+		this.to = to;
 		this.weight = weight;
 	}
 	
 	@Override
 	public int compareTo( Edge other ) {
-		return Integer.compare( weight, other.weight );
+		
+		int diff = Integer.compare( weight, other.weight );
+		if ( diff == 0 ) {
+			return Integer.compare( from.id + to.id, other.from.id + other.to.id );
+		} else {
+			return diff;
+		}
 	}
 	
 	@Override
 	public String toString() {
-		return "-" + weight + "-> Node(" + target.id + ")";
+		return  "N(" + to.id + ") --" + weight + "-- N(" + from.id + ")";
 	}
 
+}
+
+class UnionFind {
+	
+	private Map<Integer,List<Node>> leads;
+	
+	public UnionFind() {
+		this.leads = new HashMap<>();
+	}
+	
+	public boolean isConnected( Node from, Node to ) {
+		return from.unionLead != null && from.unionLead == to.unionLead;
+	}
+	
+	public void union( Node from, Node to ) {
+		
+		if ( isConnected( from, to ) ) {
+			return;
+		}
+		
+		if ( from.unionLead == null ) {
+			initLead( from );
+		}
+		
+		if ( to.unionLead == null ) {
+			initLead( to );
+		}
+		
+		if ( getSetSize( from ) >= getSetSize( to ) ) {
+			setNewLead( from.unionLead, to );
+		} else {
+			setNewLead( to.unionLead, from );
+		}
+	}
+	
+	private void initLead( Node node ) {
+		node.unionLead = node;
+		List<Node> nodes = new ArrayList<>();
+		nodes.add( node );
+		leads.put( node.id, nodes );
+	}
+	
+	private int getSetSize( Node node ) {
+		return leads.get( node.unionLead.id ).size();
+	}
+	
+	private void setNewLead( Node lead, Node follower ) {
+		
+		Node prevLead = follower.unionLead;
+		List<Node> prevFollowers = leads.get( prevLead.id );
+		leads.remove( prevLead.id );
+		
+		for ( Node prevFollower : prevFollowers ) {
+			prevFollower.unionLead = lead;
+			leads.get( lead.id ).add( prevFollower );
+		}
+	}
+	
 }
