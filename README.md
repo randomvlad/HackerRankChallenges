@@ -2,7 +2,7 @@
 
 Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. All solutions are coded in Java 8.
 
-Total problems solved: 34.
+Total problems solved: 35.
 
 ## Algorithms
 1. Implementation (8)
@@ -36,11 +36,12 @@ Total problems solved: 34.
   * Ice Cream Parlor: [Problem](https://www.hackerrank.com/challenges/icecream-parlor) - [Solution](src/main/java/hackrank/algorithm/search/icecream/Solution.java)  
   * Missing Numbers: [Problem](https://www.hackerrank.com/challenges/missing-numbers) - [Solution](src/main/java/hackrank/algorithm/search/missing/Solution.java)
   * Cut the Tree: [Problem](https://www.hackerrank.com/challenges/cut-the-tree) - [Solution](src/main/java/hackrank/algorithm/search/cuttree/Solution.java)
-5. Graph Theory (5)
+5. Graph Theory (6)
   * Breadth Shortest Reach: [Problem](https://www.hackerrank.com/challenges/bfsshortreach) - [Solution](src/main/java/hackrank/algorithm/graph/bfsreach/Solution.java)
   * Dijkstra Shortest Reach: [Problem](https://www.hackerrank.com/challenges/dijkstrashortreach) - [Solution](src/main/java/hackrank/algorithm/graph/dijkstrareach/Solution.java)
   * Prim's Special Subtree: [Problem](https://www.hackerrank.com/challenges/primsmstsub) - [Solution](src/main/java/hackrank/algorithm/graph/primsubtree/Solution.java)  
-  * Kruskal's Really Special Subtree: [Problem](https://www.hackerrank.com/challenges/kruskalmstrsub) - [Solution](src/main/java/hackrank/algorithm/graph/kruskalmst/Solution.java)  
+  * Kruskal's Really Special Subtree: [Problem](https://www.hackerrank.com/challenges/kruskalmstrsub) - [Solution](src/main/java/hackrank/algorithm/graph/kruskalmst/Solution.java)
+  * Even Tree: [Problem](https://www.hackerrank.com/challenges/even-tree) - [Solution](src/main/java/hackrank/algorithm/graph/eventree/Solution.java)
   * Snakes and Ladders: [Problem](https://www.hackerrank.com/challenges/the-quickest-way-up) - [Solution](src/main/java/hackrank/algorithm/graph/snake/Solution.java)
 6. Dynamic Programming (2)
   * Fibonacci Modified: [Problem](https://www.hackerrank.com/challenges/fibonacci-modified) - [Solution](src/main/java/hackrank/algorithm/dynamic/fibmod/Solution.java)
