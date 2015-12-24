@@ -82,10 +82,6 @@ class UnionFind {
 		}
 	}
 	
-	public int getNumberNodes() {
-		return nodeLeads.length;
-	}
-	
 	public List<Integer> getSetSizes() {
 		
 		Map<Integer,Integer> sizes = new HashMap<>();
