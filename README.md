@@ -2,7 +2,7 @@
 
 Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. All solutions are coded in Java 8.
 
-Total problems solved: 38.
+Total problems solved: 39.
 
 ## Algorithms
 1. Implementation (8)
@@ -47,8 +47,9 @@ Total problems solved: 38.
 6. Dynamic Programming (2)
   * Fibonacci Modified: [Problem](https://www.hackerrank.com/challenges/fibonacci-modified) - [Solution](src/main/java/hackrank/algorithm/dynamic/fibmod/Solution.java)
   * The Maximum Subarray: [Problem](https://www.hackerrank.com/challenges/maxsubarray) - [Solution](src/main/java/hackrank/algorithm/dynamic/maxsub/Solution.java)
-7. Bit Manipulation (1)
+7. Bit Manipulation (2)
   * Lonely Integer: [Problem](https://www.hackerrank.com/challenges/lonely-integer) - [Solution](src/main/java/hackrank/algorithm/bit/lonely/Solution.java)
+  * Maximizing XOR: [Problem](https://www.hackerrank.com/challenges/maximizing-xor) - [Solution](src/main/java/hackrank/algorithm/bit/maxxor/Solution.java)
 
 ## Data Structures
 1. Arrays (1)
