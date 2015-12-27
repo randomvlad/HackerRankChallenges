@@ -20,6 +20,9 @@ public class Solution {
 		for ( int i = start; i <= end; i++ ) {
 			for ( int j = i; j <= end; j++ ) {
 				int max = i ^ j;
+				
+				// System.out.println( i + " XOR " + j + " = " + max );
+				
 				if ( max > bestMax ) {
 					bestMax = max;
 				}
