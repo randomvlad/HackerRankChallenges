@@ -2,7 +2,7 @@
 
 Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. All solutions are coded in Java 8.
 
-Total problems solved: 40.
+Total problems solved: 41.
 
 ## Algorithms
 1. Implementation (8)
@@ -14,10 +14,11 @@ Total problems solved: 40.
   * Cut the Sticks: [Problem](https://www.hackerrank.com/challenges/cut-the-sticks) - [Solution](src/main/java/hackrank/algorithm/implement/stick/Solution.java)
   * Chocolate Feast: [Problem](https://www.hackerrank.com/challenges/chocolate-feast) - [Solution](src/main/java/hackrank/algorithm/implement/chocolate/Solution.java)
   * Caesar Cipher: [Problem](https://www.hackerrank.com/challenges/caesar-cipher-1) - [Solution](src/main/java/hackrank/algorithm/implement/caesar/Solution.java)
-2. Strings (5)
+2. Strings (6)
   * Funny String: [Problem](https://www.hackerrank.com/challenges/funny-string) - [Solution](src/main/java/hackrank/algorithm/string/funny/Solution.java)
   * Pangrams: [Problem](https://www.hackerrank.com/challenges/pangrams) - [Solution](src/main/java/hackrank/algorithm/string/pangram/Solution.java)
   * Alternating Characters: [Problem](https://www.hackerrank.com/challenges/alternating-characters) - [Solution](src/main/java/hackrank/algorithm/string/alternate/Solution.java)
+  * Game of Thrones: [Problem](https://www.hackerrank.com/challenges/game-of-thrones) - [Solution](src/main/java/hackrank/algorithm/string/thrones/Solution.java)  
   * Two Strings: [Problem](https://www.hackerrank.com/challenges/two-strings) - [Solution](src/main/java/hackrank/algorithm/string/two/Solution.java)
   * Sherlock and Valid Strings: [Problem](https://www.hackerrank.com/challenges/sherlock-and-valid-string) - [Solution](src/main/java/hackrank/algorithm/string/sherlock/Solution.java)
 3. Sorting (10)
