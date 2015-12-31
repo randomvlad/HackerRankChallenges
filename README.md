@@ -2,7 +2,7 @@
 
 Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. All solutions are coded in Java 8.
 
-Total problems solved: 45
+Total problems solved: 46
 
 ## Algorithms
 1. Implementation (8)
@@ -45,7 +45,8 @@ Total problems solved: 45
   * Even Tree: [Problem](https://www.hackerrank.com/challenges/even-tree) - [Solution](src/main/java/hackrank/algorithm/graph/eventree/Solution.java)
   * Journey to the Moon: [Problem](https://www.hackerrank.com/challenges/journey-to-the-moon) - [Solution](src/main/java/hackrank/algorithm/graph/moon/Solution.java)  
   * Snakes and Ladders: [Problem](https://www.hackerrank.com/challenges/the-quickest-way-up) - [Solution](src/main/java/hackrank/algorithm/graph/snake/Solution.java)
-6. Greedy (3)
+6. Greedy (4)
+  * Grid Challenge: [Problem](https://www.hackerrank.com/challenges/grid-challenge) - [Solution](src/main/java/hackrank/algorithm/greedy/grid/Solution.java)
   * Jim and the Orders: [Problem](https://www.hackerrank.com/challenges/jim-and-the-orders) - [Solution](src/main/java/hackrank/algorithm/greedy/jimorder/Solution.java)   
   * Mark and Toys: [Problem](https://www.hackerrank.com/challenges/mark-and-toys) - [Solution](src/main/java/hackrank/algorithm/greedy/toys/Solution.java)
   * Two Arrays: [Problem](https://www.hackerrank.com/challenges/two-arrays) - [Solution](src/main/java/hackrank/algorithm/greedy/arrays/Solution.java)  
