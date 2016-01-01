@@ -2,14 +2,15 @@
 
 Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. All solutions are coded in Java 8.
 
-Total problems solved: 46
+Total problems solved: 47
 
 ## Algorithms
-1. Implementation (8)
+1. Implementation (9)
   * Angry Professor: [Problem](https://www.hackerrank.com/challenges/angry-professor) - [Solution](src/main/java/hackrank/algorithm/implement/angryprof/Solution.java)
   * Sherlock and The Beast: [Problem](https://www.hackerrank.com/challenges/sherlock-and-the-beast) - [Solution](src/main/java/hackrank/algorithm/implement/sherlock/Solution.java)
   * Utopian Tree: [Problem](https://www.hackerrank.com/challenges/utopian-tree) - [Solution](src/main/java/hackrank/algorithm/implement/utopian/Solution.java)
-  * Find Digits: [Problem](https://www.hackerrank.com/challenges/find-digits) - [Solution](src/main/java/hackrank/algorithm/implement/digit/Solution.java)  
+  * Find Digits: [Problem](https://www.hackerrank.com/challenges/find-digits) - [Solution](src/main/java/hackrank/algorithm/implement/digit/Solution.java)
+  * Sherlock and Squares: [Problem](https://www.hackerrank.com/challenges/sherlock-and-squares) - [Solution](src/main/java/hackrank/algorithm/implement/squares/Solution.java)
   * Service Lane: [Problem](https://www.hackerrank.com/challenges/service-lane) - [Solution](src/main/java/hackrank/algorithm/implement/lane/Solution.java)
   * Cut the Sticks: [Problem](https://www.hackerrank.com/challenges/cut-the-sticks) - [Solution](src/main/java/hackrank/algorithm/implement/stick/Solution.java)
   * Chocolate Feast: [Problem](https://www.hackerrank.com/challenges/chocolate-feast) - [Solution](src/main/java/hackrank/algorithm/implement/chocolate/Solution.java)
