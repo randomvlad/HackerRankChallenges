@@ -2,8 +2,11 @@ package hackrank.algorithm.implement.stones;
 
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Scanner;
+import java.util.SortedSet;
+import java.util.TreeSet;
 import java.util.stream.Collectors;
 
 /**
@@ -17,29 +20,27 @@ public class Solution {
 		
 		for ( Trail trail : readInput( System.in ) ) {
 			
-			List<Integer> numbers = findLastStoneNumbers( trail );
+			Collection<Integer> numbers = findLastStoneNumbers( trail );
 			System.out.println( numbers.stream().map( i -> String.valueOf( i ) ).collect( Collectors.joining( " " ) ) );
 		}
 		
 	}
 	
-	public static List<Integer> findLastStoneNumbers( Trail trail ) {
+	public static Collection<Integer> findLastStoneNumbers( Trail trail ) {
 		
-		List<Integer> endings = new ArrayList<>();
-		
-		/*
-		 * first stone = 0
-		 * number of stones 3, with diff 1 or 2
-		 * 
-		 * 1 1 -> 0, 1, 2
-		 * 1 2 -> 0, 1, 3
-		 * 2 1 -> 0, 2, 3
-		 * 2 2 -> 0, 2, 4
-		 */
+		SortedSet<Integer> endings = new TreeSet<>();
+				
+		for ( int a = 0; a < trail.numberStones; a++ ) {
+			int b = trail.numberStones - 1 - a;
+			
+			int ending = a * trail.diff1 + b * trail.diff2;
+			
+			endings.add( ending );
+		}
 		
 		return endings;
 	}
-	
+		
 	public static List<Trail> readInput( InputStream stream ) {
 		
 		Scanner scanner = new Scanner( stream );

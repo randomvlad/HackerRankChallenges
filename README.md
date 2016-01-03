@@ -1,11 +1,11 @@
 # Hacker Rank Challenges
 
-Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. All solutions are coded in Java 8.
+Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. Solutions are coded in Java 8 and pass all available tests to earn full points on each problem. Please note that when copy pasting the code into HackerRank's UI, the first line of package declaration needs to be deleted (HackerRank does not allow package names).  
 
-Total problems solved: 47
+Total problems solved: 48
 
 ## Algorithms
-1. Implementation (9)
+1. Implementation (10)
   * Angry Professor: [Problem](https://www.hackerrank.com/challenges/angry-professor) - [Solution](src/main/java/hackrank/algorithm/implement/angryprof/Solution.java)
   * Sherlock and The Beast: [Problem](https://www.hackerrank.com/challenges/sherlock-and-the-beast) - [Solution](src/main/java/hackrank/algorithm/implement/sherlock/Solution.java)
   * Utopian Tree: [Problem](https://www.hackerrank.com/challenges/utopian-tree) - [Solution](src/main/java/hackrank/algorithm/implement/utopian/Solution.java)
@@ -15,6 +15,7 @@ Total problems solved: 47
   * Cut the Sticks: [Problem](https://www.hackerrank.com/challenges/cut-the-sticks) - [Solution](src/main/java/hackrank/algorithm/implement/stick/Solution.java)
   * Chocolate Feast: [Problem](https://www.hackerrank.com/challenges/chocolate-feast) - [Solution](src/main/java/hackrank/algorithm/implement/chocolate/Solution.java)
   * Caesar Cipher: [Problem](https://www.hackerrank.com/challenges/caesar-cipher-1) - [Solution](src/main/java/hackrank/algorithm/implement/caesar/Solution.java)
+  * Manasa and Stones: [Problem](https://www.hackerrank.com/challenges/manasa-and-stones) - [Solution](src/main/java/hackrank/algorithm/implement/stones/Solution.java)
 2. Strings (6)
   * Funny String: [Problem](https://www.hackerrank.com/challenges/funny-string) - [Solution](src/main/java/hackrank/algorithm/string/funny/Solution.java)
   * Pangrams: [Problem](https://www.hackerrank.com/challenges/pangrams) - [Solution](src/main/java/hackrank/algorithm/string/pangram/Solution.java)
