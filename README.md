@@ -2,7 +2,7 @@
 
 Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. Solutions are coded in Java 8 and pass all available tests to earn full points on each problem. Please note that when copy pasting the code into HackerRank's UI, the first line of package declaration needs to be deleted (HackerRank does not allow package names).  
 
-Total problems solved: 51
+Total problems solved: 52
 
 ## Algorithms
 1. Implementation (12)
@@ -18,12 +18,13 @@ Total problems solved: 51
   * Grid Search: [Problem](https://www.hackerrank.com/challenges/the-grid-search) - [Solution](src/main/java/hackrank/algorithm/implement/grid/Solution.java)
   * Cavity Map: [Problem](https://www.hackerrank.com/challenges/cavity-map) - [Solution](src/main/java/hackrank/algorithm/implement/cavity/Solution.java)
   * Manasa and Stones: [Problem](https://www.hackerrank.com/challenges/manasa-and-stones) - [Solution](src/main/java/hackrank/algorithm/implement/stones/Solution.java)
-2. Strings (7)
+2. Strings (8)
   * Funny String: [Problem](https://www.hackerrank.com/challenges/funny-string) - [Solution](src/main/java/hackrank/algorithm/string/funny/Solution.java)
   * Pangrams: [Problem](https://www.hackerrank.com/challenges/pangrams) - [Solution](src/main/java/hackrank/algorithm/string/pangram/Solution.java)
   * Alternating Characters: [Problem](https://www.hackerrank.com/challenges/alternating-characters) - [Solution](src/main/java/hackrank/algorithm/string/alternate/Solution.java)
   * Game of Thrones: [Problem](https://www.hackerrank.com/challenges/game-of-thrones) - [Solution](src/main/java/hackrank/algorithm/string/thrones/Solution.java)  
   * Gemstones: [Problem](https://www.hackerrank.com/challenges/gem-stones) - [Solution](src/main/java/hackrank/algorithm/string/gems/Solution.java)
+  * Make it Anagram: [Problem](https://www.hackerrank.com/challenges/make-it-anagram) - [Solution](src/main/java/hackrank/algorithm/string/mkanagram/Solution.java) 
   * Two Strings: [Problem](https://www.hackerrank.com/challenges/two-strings) - [Solution](src/main/java/hackrank/algorithm/string/two/Solution.java)
   * Sherlock and Valid Strings: [Problem](https://www.hackerrank.com/challenges/sherlock-and-valid-string) - [Solution](src/main/java/hackrank/algorithm/string/sherlock/Solution.java)
 3. Sorting (10)
