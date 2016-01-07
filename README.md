@@ -5,25 +5,11 @@ Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/Evil
 Total problems solved: 53
 
 ## Algorithms
-<!---
-1. Implementation (12)
-  * Angry Professor: [Problem](https://www.hackerrank.com/challenges/angry-professor) - [Solution](src/main/java/hackrank/algorithm/implement/angryprof/Solution.java)
-  * Sherlock and The Beast: [Problem](https://www.hackerrank.com/challenges/sherlock-and-the-beast) - [Solution](src/main/java/hackrank/algorithm/implement/sherlock/Solution.java)
-  * Utopian Tree: [Problem](https://www.hackerrank.com/challenges/utopian-tree) - [Solution](src/main/java/hackrank/algorithm/implement/utopian/Solution.java)
-  * Find Digits: [Problem](https://www.hackerrank.com/challenges/find-digits) - [Solution](src/main/java/hackrank/algorithm/implement/digit/Solution.java)
-  * Sherlock and Squares: [Problem](https://www.hackerrank.com/challenges/sherlock-and-squares) - [Solution](src/main/java/hackrank/algorithm/implement/squares/Solution.java)
-  * Service Lane: [Problem](https://www.hackerrank.com/challenges/service-lane) - [Solution](src/main/java/hackrank/algorithm/implement/lane/Solution.java)
-  * Cut the Sticks: [Problem](https://www.hackerrank.com/challenges/cut-the-sticks) - [Solution](src/main/java/hackrank/algorithm/implement/stick/Solution.java)
-  * Chocolate Feast: [Problem](https://www.hackerrank.com/challenges/chocolate-feast) - [Solution](src/main/java/hackrank/algorithm/implement/chocolate/Solution.java)
-  * Caesar Cipher: [Problem](https://www.hackerrank.com/challenges/caesar-cipher-1) - [Solution](src/main/java/hackrank/algorithm/implement/caesar/Solution.java)
-  * Grid Search: [Problem](https://www.hackerrank.com/challenges/the-grid-search) - [Solution](src/main/java/hackrank/algorithm/implement/grid/Solution.java)
-  * Cavity Map: [Problem](https://www.hackerrank.com/challenges/cavity-map) - [Solution](src/main/java/hackrank/algorithm/implement/cavity/Solution.java)
-  * Manasa and Stones: [Problem](https://www.hackerrank.com/challenges/manasa-and-stones) - [Solution](src/main/java/hackrank/algorithm/implement/stones/Solution.java)
--->
 
-__Implementation (12):__ 
-| Name (12) | Difficulty |  |  |
-| --- |:---:| --- | --- |
+Implementation (12):
+
+| Name | Difficulty |  |  |
+| --- |:---:| --- | --- | 
 | Angry Professor| Easy | [Problem](https://www.hackerrank.com/challenges/angry-professor) | [Solution](src/main/java/hackrank/algorithm/implement/angryprof/Solution.java) |
 | Sherlock and The Beast| Easy | [Problem](https://www.hackerrank.com/challenges/sherlock-and-the-beast) | [Solution](src/main/java/hackrank/algorithm/implement/sherlock/Solution.java) |
 | Utopian Tree| Easy | [Problem](https://www.hackerrank.com/challenges/utopian-tree) | [Solution](src/main/java/hackrank/algorithm/implement/utopian/Solution.java) |
