@@ -2,7 +2,7 @@
 
 Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. Solutions are coded in Java 8 and pass all available tests to earn full points on each problem. Please note that when copy pasting the code into HackerRank's UI, the first line of package declaration needs to be deleted (HackerRank does not allow package names).  
 
-Total problems solved: 54
+Total problems solved: 55
 
 ## Algorithms
 
@@ -46,10 +46,11 @@ Total problems solved: 54
 | | Counting Sort Part 3 | Easy | [Problem](https://www.hackerrank.com/challenges/countingsort3) | [Solution](src/main/java/hackrank/algorithm/sort/count3/Solution.java) |
 | | Counting Sort Part 4 | Moderate | [Problem](https://www.hackerrank.com/challenges/countingsort4) | [Solution](src/main/java/hackrank/algorithm/sort/count4/Solution.java) |
 | | | | | 
-| __Search (4):__ | | | | | 
+| __Search (5):__ | | | | | 
 | | Sherlock and Array | Easy | [Problem](https://www.hackerrank.com/challenges/sherlock-and-array) | [Solution](src/main/java/hackrank/algorithm/search/sherlock/Solution.java) |
 | | Ice Cream Parlor | Easy | [Problem](https://www.hackerrank.com/challenges/icecream-parlor) | [Solution](src/main/java/hackrank/algorithm/search/icecream/Solution.java) |  
 | | Missing Numbers | Moderate | [Problem](https://www.hackerrank.com/challenges/missing-numbers) | [Solution](src/main/java/hackrank/algorithm/search/missing/Solution.java) |
+| | Connected Cells | Moderate | [Problem](https://www.hackerrank.com/challenges/connected-cell-in-a-grid) | [Solution](src/main/java/hackrank/algorithm/search/connected/Solution.java) |
 | | Cut the Tree | Moderate | [Problem](https://www.hackerrank.com/challenges/cut-the-tree) | [Solution](src/main/java/hackrank/algorithm/search/cuttree/Solution.java) |
 | | | | | 
 | __Graph Theory (7):__ | | | | | 
