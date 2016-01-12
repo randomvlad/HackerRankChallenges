@@ -2,7 +2,7 @@
 
 Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. Solutions are coded in Java 8 and pass all available tests to earn full points on each problem. Please note that when copy pasting the code into HackerRank's UI, the first line of package declaration needs to be deleted (HackerRank does not allow package names).  
 
-Total problems solved: 58
+Total problems solved: 59
 
 ## Algorithms
 
@@ -63,13 +63,14 @@ Total problems solved: 58
 | | Journey to the Moon | Moderate | [Problem](https://www.hackerrank.com/challenges/journey-to-the-moon) | [Solution](src/main/java/hackrank/algorithm/graph/moon/Solution.java) |  
 | | Snakes and Ladders | Easy | [Problem](https://www.hackerrank.com/challenges/the-quickest-way-up) | [Solution](src/main/java/hackrank/algorithm/graph/snake/Solution.java) |
 | | | | | 
-| __Greedy (6):__ | | | | |
+| __Greedy (7):__ | | | | |
 | | Grid Challenge | Easy | [Problem](https://www.hackerrank.com/challenges/grid-challenge) | [Solution](src/main/java/hackrank/algorithm/greedy/grid/Solution.java) |
 | | Jim and the Orders | Easy | [Problem](https://www.hackerrank.com/challenges/jim-and-the-orders) | [Solution](src/main/java/hackrank/algorithm/greedy/jimorder/Solution.java) |   
 | | Mark and Toys | Easy | [Problem](https://www.hackerrank.com/challenges/mark-and-toys) | [Solution](src/main/java/hackrank/algorithm/greedy/toys/Solution.java) |
 | | Two Arrays | Easy | [Problem](https://www.hackerrank.com/challenges/two-arrays) | [Solution](src/main/java/hackrank/algorithm/greedy/arrays/Solution.java) |
 | | Priyanka and Toys | Easy | [Problem](https://www.hackerrank.com/challenges/priyanka-and-toys) | [Solution](src/main/java/hackrank/algorithm/greedy/priyanka/Solution.java) |
-| | Flowers | Moderate | [Problem](https://www.hackerrank.com/challenges/flowers) | [Solution](src/main/java/hackrank/algorithm/flowers/arrays/Solution.java) |
+| | Largest Permutation | Easy | [Problem](https://www.hackerrank.com/challenges/largest-permutation) | [Solution](src/main/java/hackrank/algorithm/greedy/permute/Solution.java) |
+| | Flowers | Moderate | [Problem](https://www.hackerrank.com/challenges/flowers) | [Solution](src/main/java/hackrank/algorithm/greedy/flowers/Solution.java) |
 | | | | | 
 | __Dynamic Programming (2):__ | | | | |
 | | Fibonacci Modified | Moderate | [Problem](https://www.hackerrank.com/challenges/fibonacci-modified) | [Solution](src/main/java/hackrank/algorithm/dynamic/fibmod/Solution.java) |
