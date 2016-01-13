@@ -2,7 +2,7 @@
 
 Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. Solutions are coded in Java 8 and pass all available tests to earn full points on each problem. Please note that when copy pasting the code into HackerRank's UI, the first line of package declaration needs to be deleted (HackerRank does not allow package names).  
 
-Total problems solved: 60
+Total problems solved: 61
 
 ## Algorithms
 
@@ -73,9 +73,10 @@ Total problems solved: 60
 | | Flowers | Moderate | [Problem](https://www.hackerrank.com/challenges/flowers) | [Solution](src/main/java/hackrank/algorithm/greedy/flowers/Solution.java) |
 | | Cutting Boards | Moderate | [Problem](https://www.hackerrank.com/challenges/board-cutting) | [Solution](src/main/java/hackrank/algorithm/greedy/boardcut/Solution.java) |
 | | | | | 
-| __Dynamic Programming (2):__ | | | | |
+| __Dynamic Programming (3):__ | | | | |
 | | Fibonacci Modified | Moderate | [Problem](https://www.hackerrank.com/challenges/fibonacci-modified) | [Solution](src/main/java/hackrank/algorithm/dynamic/fibmod/Solution.java) |
 | | The Maximum Subarray | Easy | [Problem](https://www.hackerrank.com/challenges/maxsubarray) | [Solution](src/main/java/hackrank/algorithm/dynamic/maxsub/Solution.java) |
+| | Stock Maximize | Moderate | [Problem](https://www.hackerrank.com/challenges/stockmax) | [Solution](src/main/java/hackrank/algorithm/dynamic/maxstock/Solution.java) |
 | | | | | 
 | __Bit Manipulation (4):__ | | | | | 
 | | Lonely Integer | Easy | [Problem](https://www.hackerrank.com/challenges/lonely-integer) | [Solution](src/main/java/hackrank/algorithm/bit/lonely/Solution.java) |
