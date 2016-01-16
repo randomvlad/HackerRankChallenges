@@ -1,14 +1,10 @@
 package hackrank.algorithm.graph.coin;
 
 import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * Coin Change Challenge
@@ -46,10 +42,12 @@ class CoinChanger {
 	private int amount;
 	private int[] coins;
 	private int count;
+	private Map<Integer,Integer> results;
 	
 	CoinChanger( int amount, int[] coins ) {
 		this.amount = amount;
 		this.coins = coins;
+		this.results = new HashMap<>();
 	}
 	
 	public int countWaysMakeChange() {
@@ -81,6 +79,8 @@ class CoinChanger {
 		
 		Arrays.sort( coins );
 		
+		this.results.clear();
+		
 		int smallestCoin = coins[ 0 ];
 		int maxNumberCoins = amount / smallestCoin; 
 		
@@ -94,19 +94,68 @@ class CoinChanger {
 			return;
 		}
 		
+		if ( hasCalculation( value ) ) {
+			count += getCalculation( value );
+			return;
+		}
+		
 		for ( int index = startIndex; index < coins.length; index++ ) {
 			int coin = coins[ index ];
 			
 			int reducedValue = value - coin;
+			
+			if ( hasCalculation( reducedValue ) ) {
+				int prevCount = getCalculation( reducedValue );
+				saveCalculation( value, prevCount > 0 );
+				count += prevCount;
+				break;
+			}
+			
 			if ( reducedValue == 0 ) {
+				saveCalculation( value, true );
 				count++;
 				break;
 			} else if ( reducedValue < 0 ) {
+				saveCalculation( value, false );
 				break;
 			} else {
 				countWaysMakeChange2( index, reducedValue, availableCoins - 1 );
 			}
 		}
+		
+		// subtracting the same numbers over and over again + recursive calls ... how can you remember that?
+		
+		/*
+		 * 1-3-5
+		 * 
+		 * Example: $4 remaining
+		 * 
+		 * 4 -> List<String> 1-1-1-1, 1-3
+		 * 
+		 * remaining -> count
+		 * 			 * 
+		 * value 4, need to know how many ways I can getd to 0 from there
+		 */
+		
+	}
+	
+	private void saveCalculation( int value, boolean success ) {
+		if ( ! results.containsKey( value ) ) {
+			results.put( value, 0 );
+		}
+		
+		if ( success ) {
+			int count = results.get( value );
+			results.put( value, count + 1 );
+		}
+	}
+	
+	private boolean hasCalculation( int value ) {
+		return results.containsKey( value );
+	}
+	
+	private int getCalculation( int value ) {
+		return results.get( value );
 	}
 	
 }
