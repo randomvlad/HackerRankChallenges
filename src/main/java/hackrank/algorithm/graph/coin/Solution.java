@@ -43,8 +43,9 @@ public class Solution {
 
 class CoinChanger {
 	
-	int amount;
-	int[] coins;
+	private int amount;
+	private int[] coins;
+	private int count;
 	
 	CoinChanger( int amount, int[] coins ) {
 		this.amount = amount;
@@ -53,32 +54,58 @@ class CoinChanger {
 	
 	public int countWaysMakeChange() {
 		
-		Set<String> ways = new HashSet<>();
-		for ( int coin : coins ) {
-			countWaysToMakeChange( Arrays.asList( coin ), coin, ways );
-		}
-		
-//		for ( String way : ways ) {
-//			System.out.println( way );
-//		}
-		
-		return ways.size();
+		Arrays.sort( coins );
+		count = 0;
+		countWaysMakeChange( 0, 0 );
+		return count;
 	}
 	
-	private void countWaysToMakeChange( List<Integer> sequence, int total, Set<String> ways ) {
-		if ( total == amount ) {
-			Collections.sort( sequence );
-			String id = sequence.stream().map( i -> i + "" ).collect( Collectors.joining( "-" ) );
-			ways.add( id );
-			return;
-		} else if ( total > amount ) {
+	private void countWaysMakeChange( int startIndex, int total ) {
+		
+		for ( int index = startIndex; index < coins.length; index++ ) {
+			int coin = coins[ index ];
+			
+			int newTotal = coin + total;
+			if ( newTotal > amount ) {
+				break; // no point in trying any further coins since they are greater
+			} else if ( newTotal == amount ) {
+				count++;
+				break;
+			} else {
+				countWaysMakeChange( index, newTotal );	
+			}
+		}
+	}
+	
+	public int countWaysMakeChange2() {
+		
+		Arrays.sort( coins );
+		
+		int smallestCoin = coins[ 0 ];
+		int maxNumberCoins = amount / smallestCoin; 
+		
+		count = 0;
+		countWaysMakeChange2( 0, amount, maxNumberCoins );
+		return count;
+	}
+	
+	public void countWaysMakeChange2( int startIndex, int value, int availableCoins ) {		
+		if ( availableCoins == 0 ) {
 			return;
 		}
 		
-		for ( int coin : coins ) {
-			List<Integer> newSequence = new ArrayList<>( sequence );
-			newSequence.add( coin );
-			countWaysToMakeChange( newSequence, coin + total, ways );
+		for ( int index = startIndex; index < coins.length; index++ ) {
+			int coin = coins[ index ];
+			
+			int reducedValue = value - coin;
+			if ( reducedValue == 0 ) {
+				count++;
+				break;
+			} else if ( reducedValue < 0 ) {
+				break;
+			} else {
+				countWaysMakeChange2( index, reducedValue, availableCoins - 1 );
+			}
 		}
 	}
 	
