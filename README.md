@@ -2,7 +2,7 @@
 
 Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. Solutions are coded in Java 8 and pass all available tests to earn full points on each problem. Please note that when copy pasting the code into HackerRank's UI, the first line of package declaration needs to be deleted (HackerRank does not allow package names).  
 
-Total problems solved: 62
+Total problems solved: 63
 
 ## Algorithms
 
@@ -63,7 +63,7 @@ Total problems solved: 62
 | | Journey to the Moon | Moderate | [Problem](https://www.hackerrank.com/challenges/journey-to-the-moon) | [Solution](src/main/java/hackrank/algorithm/graph/moon/Solution.java) |  
 | | Snakes and Ladders | Easy | [Problem](https://www.hackerrank.com/challenges/the-quickest-way-up) | [Solution](src/main/java/hackrank/algorithm/graph/snake/Solution.java) |
 | | | | | 
-| __Greedy (8):__ | | | | |
+| __Greedy (9):__ | | | | |
 | | Grid Challenge | Easy | [Problem](https://www.hackerrank.com/challenges/grid-challenge) | [Solution](src/main/java/hackrank/algorithm/greedy/grid/Solution.java) |
 | | Jim and the Orders | Easy | [Problem](https://www.hackerrank.com/challenges/jim-and-the-orders) | [Solution](src/main/java/hackrank/algorithm/greedy/jimorder/Solution.java) |   
 | | Mark and Toys | Easy | [Problem](https://www.hackerrank.com/challenges/mark-and-toys) | [Solution](src/main/java/hackrank/algorithm/greedy/toys/Solution.java) |
@@ -72,6 +72,7 @@ Total problems solved: 62
 | | Largest Permutation | Easy | [Problem](https://www.hackerrank.com/challenges/largest-permutation) | [Solution](src/main/java/hackrank/algorithm/greedy/permute/Solution.java) |
 | | Flowers | Moderate | [Problem](https://www.hackerrank.com/challenges/flowers) | [Solution](src/main/java/hackrank/algorithm/greedy/flowers/Solution.java) |
 | | Cutting Boards | Moderate | [Problem](https://www.hackerrank.com/challenges/board-cutting) | [Solution](src/main/java/hackrank/algorithm/greedy/boardcut/Solution.java) |
+| | Max Min | Moderate | [Problem](https://www.hackerrank.com/challenges/angry-children) | [Solution](src/main/java/hackrank/algorithm/greedy/maxmin/Solution.java) |
 | | | | | 
 | __Dynamic Programming (4):__ | | | | |
 | | Fibonacci Modified | Moderate | [Problem](https://www.hackerrank.com/challenges/fibonacci-modified) | [Solution](src/main/java/hackrank/algorithm/dynamic/fibmod/Solution.java) |
