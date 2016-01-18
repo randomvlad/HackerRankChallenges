@@ -1,10 +1,7 @@
 package hackrank.algorithm.graph.coin;
 
 import java.io.InputStream;
-import java.util.Arrays;
 import java.util.Scanner;
-
-// http://www.geeksforgeeks.org/dynamic-programming-set-7-coin-change/
 
 /**
  * Coin Change Challenge
@@ -15,24 +12,7 @@ public class Solution {
 
 	public static void main( String[] args ) {
 		 CoinChanger changer = readInput( System.in );
-		 System.out.println( changer.countWaysMakeChange() );
-	}
-
-	public static long countNoMem( int coins[], int available, int value ) {
-		if ( value == 0 ) {
-			return 1;
-		}
-
-		if ( value < 0 ) {
-			return 0;
-		}
-
-		if ( available <= 0 && value >= 1 ) {
-			return 0;
-		}
-
-		int reducedValue = value - coins[ available - 1 ];
-		return countNoMem( coins, available - 1, value ) + countNoMem( coins, available, reducedValue );
+		 System.out.println( changer.countWays() );
 	}
 
 	public static CoinChanger readInput( InputStream stream ) {
@@ -64,23 +44,40 @@ class CoinChanger {
 		this.coins = coins;
 	}
 
-	public long countWaysMakeChange() {
-		Arrays.sort( coins );
-		return count( coins.length, amount );
-	}
-	
-	private long count( int available, int value ) {
+	public long countWays() {
 		
-		long[] table = new long[ value + 1 ];
+		long[] ways = new long[ amount + 1 ];
 		
-		table[ 0 ] = 1;
+		ways[ 0 ] = 1;
 
-		for ( int i = 0; i < available; i++ ) {
-			for ( int j = coins[ i ]; j <= value; j++ ) {
-				table[ j ] += table[ j - coins[ i ] ];
+		for ( int i = 0; i < coins.length; i++ ) {
+			int coin = coins[ i ];
+			for ( int j = coin; j <= amount; j++ ) {
+				ways[ j ] += ways[ j - coin ];
 			}
 		}
+		
+		return ways[ amount ];
+	}
+	
+	public long countWaysRecursive() {
+		return countRecursive( coins.length, amount );
+	}
+	
+	private long countRecursive( int available, int value ) {
+		if ( value == 0 ) {
+			return 1;
+		}
 
-		return table[ value ];
+		if ( value < 0 ) {
+			return 0;
+		}
+
+		if ( available <= 0 && value >= 1 ) {
+			return 0;
+		}
+
+		int reducedValue = value - coins[ available - 1 ];
+		return countRecursive( available - 1, value ) + countRecursive( available, reducedValue );
 	}
 }
