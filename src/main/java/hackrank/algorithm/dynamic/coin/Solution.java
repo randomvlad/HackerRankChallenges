@@ -1,4 +1,4 @@
-package hackrank.algorithm.graph.coin;
+package hackrank.algorithm.dynamic.coin;
 
 import java.io.InputStream;
 import java.util.Scanner;
