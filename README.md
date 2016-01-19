@@ -2,7 +2,7 @@
 
 Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. Solutions are coded in Java 8 and pass all available tests to earn full points on each problem. Please note that when copy pasting the code into HackerRank's UI, the first line of package declaration needs to be deleted (HackerRank does not allow package names).  
 
-Total problems solved: 63
+Total problems solved: 64
 
 ## Algorithms
 
@@ -74,10 +74,11 @@ Total problems solved: 63
 | | Cutting Boards | Moderate | [Problem](https://www.hackerrank.com/challenges/board-cutting) | [Solution](src/main/java/hackrank/algorithm/greedy/boardcut/Solution.java) |
 | | Max Min | Moderate | [Problem](https://www.hackerrank.com/challenges/angry-children) | [Solution](src/main/java/hackrank/algorithm/greedy/maxmin/Solution.java) |
 | | | | | 
-| __Dynamic Programming (4):__ | | | | |
+| __Dynamic Programming (5):__ | | | | |
 | | Fibonacci Modified | Moderate | [Problem](https://www.hackerrank.com/challenges/fibonacci-modified) | [Solution](src/main/java/hackrank/algorithm/dynamic/fibmod/Solution.java) |
 | | The Maximum Subarray | Easy | [Problem](https://www.hackerrank.com/challenges/maxsubarray) | [Solution](src/main/java/hackrank/algorithm/dynamic/maxsub/Solution.java) |
 | | Coin Change | Moderate | [Problem](https://www.hackerrank.com/challenges/coin-change) | [Solution](src/main/java/hackrank/algorithm/dynamic/coin/Solution.java) |
+| | Candies | Moderate | [Problem](https://www.hackerrank.com/challenges/candies) | [Solution](src/main/java/hackrank/algorithm/dynamic/candy/Solution.java) |
 | | Stock Maximize | Moderate | [Problem](https://www.hackerrank.com/challenges/stockmax) | [Solution](src/main/java/hackrank/algorithm/dynamic/maxstock/Solution.java) |
 | | | | | 
 | __Bit Manipulation (4):__ | | | | | 
