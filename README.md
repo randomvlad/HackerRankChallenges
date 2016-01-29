@@ -2,13 +2,13 @@
 
 Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. Solutions are coded in Java 8 and pass all available tests to earn full points on each problem. Please note that when copy pasting the code into HackerRank's UI, the first line of package declaration needs to be deleted (HackerRank does not allow package names).  
 
-Total problems solved: 68
+Total problems solved: 69
 
 ## Algorithms
 
 | Category | Name | Difficulty | Problem | Solution |
 | --- | --- |:---:| --- | --- |
-| __Imlementation (16):__ | | | | | 
+| __Imlementation (17):__ | | | | | 
 | | Angry Professor| Easy | [Problem](https://www.hackerrank.com/challenges/angry-professor) | [Solution](src/main/java/hackrank/algorithm/implement/angryprof/Solution.java) |
 | | Sherlock and The Beast| Easy | [Problem](https://www.hackerrank.com/challenges/sherlock-and-the-beast) | [Solution](src/main/java/hackrank/algorithm/implement/sherlock/Solution.java) |
 | | Utopian Tree| Easy | [Problem](https://www.hackerrank.com/challenges/utopian-tree) | [Solution](src/main/java/hackrank/algorithm/implement/utopian/Solution.java) |
@@ -22,6 +22,7 @@ Total problems solved: 68
 | | Cavity Map| Easy | [Problem](https://www.hackerrank.com/challenges/cavity-map) | [Solution](src/main/java/hackrank/algorithm/implement/cavity/Solution.java) |
 | | Manasa and Stones | Easy | [Problem](https://www.hackerrank.com/challenges/manasa-and-stones) | [Solution](src/main/java/hackrank/algorithm/implement/stones/Solution.java) |
 | | Library Fine | Easy | [Problem](https://www.hackerrank.com/challenges/library-fine) | [Solution](src/main/java/hackrank/algorithm/implement/fine/Solution.java) |
+| | ACM ICPC Team | Easy | [Problem](https://www.hackerrank.com/challenges/acm-icpc-team) | [Solution](src/main/java/hackrank/algorithm/implement/team/Solution.java) |
 | | Extra Long Factorial | Moderate | [Problem](https://www.hackerrank.com/challenges/extra-long-factorials) | [Solution](src/main/java/hackrank/algorithm/implement/factorial/Solution.java) |
 | | Time in Words | Moderate | [Problem](https://www.hackerrank.com/challenges/the-time-in-words) | [Solution](src/main/java/hackrank/algorithm/implement/time/Solution.java) |
 | | Matrix Rotation | Difficult | [Problem](https://www.hackerrank.com/challenges/matrix-rotation-algo) | [Solution](src/main/java/hackrank/algorithm/implement/rotate/Solution.java) |
