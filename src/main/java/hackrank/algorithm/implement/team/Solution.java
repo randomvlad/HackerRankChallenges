@@ -12,13 +12,13 @@ public class Solution {
 
 	public static void main( String[] args ) {
 
-		int[][] people = readInput( System.in );
+		Data data = readInput( System.in );
 		
-		int[] counts = new int[ people[ 0 ].length + 1 ];
+		int[] counts = new int[ data.numberTopics + 1 ];
 		
-		for ( int i = 0; i < people.length; i++ ) {
-			for ( int j = i + 1; j < people.length; j++ ) {
-				int count = countCoverage( people[ i ], people[ j ] );
+		for ( int i = 0; i < data.numberPeople; i++ ) {
+			for ( int j = i + 1; j < data.numberPeople; j++ ) {
+				int count = countCoverage( data.topics[ i ], data.topics[ j ] );
 				counts[ count ]++;
 			}
 		}
@@ -43,37 +43,42 @@ public class Solution {
 		return new int[] { maxTopics, maxTeams };
 	}
 	
-	public static int countCoverage( int[] topics1, int[] topics2 ) {
-		
+	public static int countCoverage( boolean[] topics1, boolean[] topics2 ) {
+
 		int count = 0;
 		for ( int i = 0; i < topics1.length; i++ ) {
-			if ( topics1[ i ] == 1 || topics2[ i ] == 1 ) {
+			if ( topics1[ i ] || topics2[ i ] ) {
 				count++;
 			}
 		}
-		
 		return count;
 	}
 	
-	
-	public static int[][] readInput( InputStream stream ) {
+	public static Data readInput( InputStream stream ) {
 		Scanner scanner = new Scanner( stream );
 		
-		int numberPeople = scanner.nextInt();
-		int numberTopics = scanner.nextInt();
+		Data data = new Data();
 		
-		int[][] data = new int[ numberPeople ][ numberTopics ];
-		for ( int i = 0; i < numberPeople; i++ ) {
+		data.numberPeople = scanner.nextInt();
+		data.numberTopics = scanner.nextInt();
+		data.topics = new boolean[ data.numberPeople ][ data.numberTopics ];
+		for ( int i = 0; i < data.numberPeople; i++ ) {
 			
-			String topics = scanner.next();
-			for ( int j = 0; j < topics.length(); j++ ) {
-				data[ i ][ j ] = Integer.valueOf( topics.charAt( j ) + "" );
+			String values = scanner.next();
+			for ( int j = 0; j < data.numberTopics; j++ ) {
+				data.topics[ i ][ j ] = values.charAt( j ) == '1';
 			}
-		}
+		}			
 		
 		scanner.close();
 		
 		return data;
 	}
 
+}
+
+class Data {
+	int numberPeople;
+	int numberTopics;
+	boolean[][] topics;
 }
