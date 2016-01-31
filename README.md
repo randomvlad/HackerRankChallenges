@@ -24,7 +24,7 @@ Total problems solved: 70
 | | Library Fine | Easy | [Problem](https://www.hackerrank.com/challenges/library-fine) | [Solution](src/main/java/hackrank/algorithm/implement/fine/Solution.java) |
 | | ACM ICPC Team | Easy | [Problem](https://www.hackerrank.com/challenges/acm-icpc-team) | [Solution](src/main/java/hackrank/algorithm/implement/team/Solution.java) |
 | | Extra Long Factorial | Moderate | [Problem](https://www.hackerrank.com/challenges/extra-long-factorials) | [Solution](src/main/java/hackrank/algorithm/implement/factorial/Solution.java) |
-| | Taum and B'day Challenge | Easy | [Problem](https://www.hackerrank.com/challenges/taum-and-bday) | [Solution](src/main/java/hackrank/algorithm/implement/bdayl/Solution.java) |
+| | Taum and B'day Challenge | Easy | [Problem](https://www.hackerrank.com/challenges/taum-and-bday) | [Solution](src/main/java/hackrank/algorithm/implement/bday/Solution.java) |
 | | Time in Words | Moderate | [Problem](https://www.hackerrank.com/challenges/the-time-in-words) | [Solution](src/main/java/hackrank/algorithm/implement/time/Solution.java) |
 | | Matrix Rotation | Difficult | [Problem](https://www.hackerrank.com/challenges/matrix-rotation-algo) | [Solution](src/main/java/hackrank/algorithm/implement/rotate/Solution.java) |
 | | | | | 
