@@ -12,42 +12,25 @@ import java.util.Scanner;
  * @see https://www.hackerrank.com/challenges/sherlock-and-anagrams 
  */
 public class Solution {
-
+	
 	public static void main( String[] args ) {
-		 
+		
 		for ( String value : readInput( System.in ) ) {
 			System.out.println( countAnagramPairs( value ) );
 		}
-		
 	}
 	
-	public static int countAnagramPairs( String value ) {
+	static int countAnagramPairs( String value ) {
 		
 		int count = 0;
-		for ( int i = 0; i < value.length() - 1; i++ ) {
-			char c = value.charAt( i );
+		for ( int size = 1; size < value.length(); size++ ) {
+			char[][] substrings = findSubstrings( value, size );
 			
-			int sameNextCharIndex = value.indexOf( c, i + 1 );
-			while ( sameNextCharIndex != - 1 ) {
-				
-				if ( sameNextCharIndex - i > 1) {
-					count += 2;
-				} else {
-					count++;
-				}
-				
-				sameNextCharIndex = value.indexOf( c, sameNextCharIndex + 1 );
-			}
-		}
-		
-		for ( int size = 2; size <= value.length() / 2; size++ ) {
-			for ( int start = 0; start <= value.length() - size; start++ ) {
-				String anagram = value.substring( start, start + size );
-				String remainder = value.substring( start + size );
-				
-				int amount = containsAnagram( anagram, remainder );
-				if ( amount > 0 ) {
-					count += amount;
+			for ( int i = 0; i < substrings.length; i++ ) {
+				for ( int j = i + 1; j < substrings.length; j++ ) {
+					if ( isEqual( substrings[ i ], substrings[ j ] ) ) {
+						count++;
+					}
 				}
 			}
 		}
@@ -55,22 +38,7 @@ public class Solution {
 		return count;
 	}
 	
-	public static int containsAnagram( String anagram, String value ) {
-		
-		char[] charsAnagram = anagram.toCharArray();
-		Arrays.sort( charsAnagram );
-		
-		int count = 0;
-		for ( char[] token : tokenize( value, anagram.length() ) ) {
-			if ( isEqual( charsAnagram, token ) ) {
-				count++;
-			}
-		}
-		
-		return count;
-	}
-	
-	private static boolean isEqual( char[] chars1, char[] chars2 ) {
+	static boolean isEqual( char[] chars1, char[] chars2 ) {
 		
 		for ( int i = 0; i < chars1.length; i++ ) {
 			if ( chars1[ i ] != chars2[ i ] ) {
@@ -81,30 +49,27 @@ public class Solution {
 		return true;
 	}
 	
-	private static char[][] tokenize( String value, int size ) {
+	static char[][] findSubstrings( String value, int size ) {
 		
-		int numberTokens = value.length() - size + 1;
-		if ( numberTokens <= 0 ) {
-			return new char[ 0 ][];
-		}
+		int numberSubstrings = value.length() - size + 1;
 		
-		char[][] tokens = new char[ numberTokens ][];
+		char[][] substrings = new char[ numberSubstrings ][];
 		
-		for ( int i = 0; i < numberTokens; i++ ) {
+		for ( int i = 0; i < numberSubstrings; i++ ) {
 			
-			char[] token = new char[ size ];
+			char[] substring = new char[ size ];
 			for ( int j = i, k = 0; j < i + size; j++, k++ ) {
-				token[ k ] = value.charAt( j );
+				substring[ k ] = value.charAt( j );
 			}
 			
-			Arrays.sort( token );
-			tokens[ i ] = token;
+			Arrays.sort( substring );
+			substrings[ i ] = substring;
 		}
 		
-		return tokens;
+		return substrings;
 	}
 	
-	public static List<String> readInput( InputStream stream ) {
+	static List<String> readInput( InputStream stream ) {
 		
 		Scanner scanner = new Scanner( stream );
 		
