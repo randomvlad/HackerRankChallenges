@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class Solution {
 
 	public static void main( String[] args ) {
-		
+		 
 		for ( String value : readInput( System.in ) ) {
 			System.out.println( countAnagramPairs( value ) );
 		}
