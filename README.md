@@ -2,7 +2,7 @@
 
 Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. Solutions are coded in Java 8 and pass all available tests to earn full points on each problem. Please note that when copy pasting the code into HackerRank's UI, the first line of package declaration needs to be deleted (HackerRank does not allow package names).  
 
-Total problems solved: 71
+Total problems solved: 72
 
 ## Algorithms
 
@@ -28,7 +28,7 @@ Total problems solved: 71
 | | Time in Words | Moderate | [Problem](https://www.hackerrank.com/challenges/the-time-in-words) | [Solution](src/main/java/hackrank/algorithm/implement/time/Solution.java) |
 | | Matrix Rotation | Difficult | [Problem](https://www.hackerrank.com/challenges/matrix-rotation-algo) | [Solution](src/main/java/hackrank/algorithm/implement/rotate/Solution.java) |
 | | | | | 
-| __Strings (11):__ | | | | |
+| __Strings (12):__ | | | | |
 | | Funny String | Easy | [Problem](https://www.hackerrank.com/challenges/funny-string) | [Solution](src/main/java/hackrank/algorithm/string/funny/Solution.java) |
 | | Pangrams | Easy | [Problem](https://www.hackerrank.com/challenges/pangrams) | [Solution](src/main/java/hackrank/algorithm/string/pangram/Solution.java) |
 | | Alternating Characters | Easy | [Problem](https://www.hackerrank.com/challenges/alternating-characters) | [Solution](src/main/java/hackrank/algorithm/string/alternate/Solution.java) |
@@ -39,6 +39,7 @@ Total problems solved: 71
 | | Two Strings | Moderate | [Problem](https://www.hackerrank.com/challenges/two-strings) | [Solution](src/main/java/hackrank/algorithm/string/two/Solution.java) |
 | | Sherlock and Anagrams | Moderate | [Problem](https://www.hackerrank.com/challenges/sherlock-and-anagrams) | [Solution](src/main/java/hackrank/algorithm/string/shergram/Solution.java) |
 | | Palindrome Index | Easy | [Problem](https://www.hackerrank.com/challenges/palindrome-index) | [Solution](src/main/java/hackrank/algorithm/string/palindrome/Solution.java) |
+| | Common Child | Difficult | [Problem](https://www.hackerrank.com/challenges/common-child) | [Solution](src/main/java/hackrank/algorithm/string/child/Solution.java) |
 | | Sherlock and Valid Strings | Difficult | [Problem](https://www.hackerrank.com/challenges/sherlock-and-valid-string) | [Solution](src/main/java/hackrank/algorithm/string/sherlock/Solution.java) |
 | | | | | 
 | __Sorting (10):__ | | | | |
