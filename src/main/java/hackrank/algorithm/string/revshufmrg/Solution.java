@@ -7,9 +7,8 @@ import java.util.Deque;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Scanner;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * Reverse Shuffle Merge Challenge
@@ -32,33 +31,70 @@ public class Solution {
 		Map<Character, Integer> counts = groupByChar( value );
 		Deque<Character> available = getAvailableOrdered( counts );
 		
-//		System.out.println( available );
-		
 		StringBuilder smallest = new StringBuilder();
 		for ( int i = value.length() - 1; i >= 0; i-- ) {
 			if ( smallest.length() == value.length() / 2 ) {
 				break;
 			}
-			
+						
 			char c = value.charAt( i );
-			
-			if ( c == available.peek() ) {				
-				smallest.append( available.pop() );
-				decrement( c, counts );
-			} else if ( counts.get( c ) == 0 && available.contains( c ) ) {
+			if ( c == available.peek() || counts.get( c ) == 0 ) {
+				smallest.append( c );
 				available.remove( c );
-				smallest.append( c );	
 			} else {
-				decrement( c, counts );
+				Optional<Character> nextMandatory = findNextMandatory( value, i - 1, available.peek(), counts );
+				if ( nextMandatory.isPresent() ) {
+					if ( c > available.peek() && c <= nextMandatory.get() ) {
+						smallest.append( c );
+						available.remove( c );
+					} else {
+						decrement( c, counts );
+					}
+				}
 			}
 		}
 		
 		return smallest.toString();
 	}
 	
+	static Optional<Character> findNextMandatory( String value, int index, char availableSmallest, Map<Character,Integer> counts ) {
+		
+		/*
+		 * TODO: need to improve
+		 * 
+		 * Example: look at h, next mandatory is i but between h and i, lowest available letter is c
+		 * 
+		 * What about two lowest available letters? like a "cde" then "i" ?
+		 */
+		
+		Map<Character,Integer> skipped = new HashMap<>();
+		
+		for ( int i = index; i >= 0; i-- ) {
+			
+			char c = value.charAt( i );
+			
+			if ( c == availableSmallest ) {
+				return Optional.of( c );
+			} else {
+				if ( ! skipped.containsKey( c ) ) {
+					skipped.put( c, 1 );
+				} else {
+					int count = skipped.get( c );
+					skipped.put( c, count + 1 );
+				}
+				
+				if ( skipped.get( c ) > counts.get( c ) ) {
+					return Optional.of( c );
+				}
+			}
+		}
+		
+		return Optional.empty();
+	}
+	
 	static void decrement( char c, Map<Character,Integer> counts ) {
 		int count = counts.get( c );
-		counts.put( c, count - 2 );
+		counts.put( c, count - 1 );
 	}
 
 	static Map<Character, Integer> groupByChar( String value ) {
@@ -76,25 +112,27 @@ public class Solution {
 			}
 		}
 		
-//		for ( char c : counts.keySet() ) {
-//			System.out.println( c + " x " + ( counts.get( c ) / 2 ) );
-//		}
+		for ( char c : counts.keySet() ) {
+			int count = counts.get( c );
+			counts.put( c, count / 2 );
+			System.out.println( c + " x " + count / 2 );
+		}
 
 		return counts;
 	}
 
 	static Deque<Character> getAvailableOrdered( Map<Character, Integer> counts ) {
 		
-		List<Character> chars = new ArrayList<>( counts.size() / 2 );
+		List<Character> chars = new ArrayList<>( counts.size() );
 		for ( Character c : counts.keySet() ) {
 			int count = counts.get( c );
-			for ( int i = 0; i < count / 2; i++ ) {
+			for ( int i = 0; i < count; i++ ) {
 				chars.add( c );
 			}
 		}
 
 		Collections.sort( chars );
-
+		
 		return new ArrayDeque<Character>( chars );
 	}
 
