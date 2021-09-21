@@ -6,60 +6,60 @@ import java.util.Scanner;
 
 /**
  * Mark and Toys
- * 
+ *
  * @see https://www.hackerrank.com/challenges/mark-and-toys
  */
 public class Solution {
 
-	public static void main( String[] args ) {
+    public static void main(String[] args) {
 
-		ToyStore toyStore = readInput( System.in );
-		
-		Arrays.sort( toyStore.prices );
-		
-		int spend = 0;
-		int numberToys = 0;
-		for ( int price : toyStore.prices ) {
-			
-			spend += price;
-			
-			if ( spend > toyStore.budget ) {
-				break;
-			} else {
-				numberToys++;
-			}
-		}
-		
-		System.out.println( numberToys );
-	}
+        ToyStore toyStore = readInput(System.in);
 
-	public static ToyStore readInput( InputStream input ) {
+        Arrays.sort(toyStore.prices);
 
-		Scanner scanner = new Scanner( input );
+        int spend = 0;
+        int numberToys = 0;
+        for (int price : toyStore.prices) {
 
-		int numberPrices = scanner.nextInt();
-		int budget = scanner.nextInt();
-		int[] prices = new int[ numberPrices ];
+            spend += price;
 
-		for ( int i = 0; i < numberPrices; i++ ) {
-			prices[ i ] = scanner.nextInt();
-		}
+            if (spend > toyStore.budget) {
+                break;
+            } else {
+                numberToys++;
+            }
+        }
 
-		scanner.close();
+        System.out.println(numberToys);
+    }
 
-		return new ToyStore( budget, prices );
-	}
+    public static ToyStore readInput(InputStream input) {
+
+        Scanner scanner = new Scanner(input);
+
+        int numberPrices = scanner.nextInt();
+        int budget = scanner.nextInt();
+        int[] prices = new int[numberPrices];
+
+        for (int i = 0; i < numberPrices; i++) {
+            prices[i] = scanner.nextInt();
+        }
+
+        scanner.close();
+
+        return new ToyStore(budget, prices);
+    }
 
 }
 
 class ToyStore {
 
-	public int budget;
-	public int[] prices;
+    public int budget;
+    public int[] prices;
 
-	public ToyStore( int budget, int[] prices ) {
-		this.budget = budget;
-		this.prices = prices;
-	}
+    public ToyStore(int budget, int[] prices) {
+        this.budget = budget;
+        this.prices = prices;
+    }
 
 }

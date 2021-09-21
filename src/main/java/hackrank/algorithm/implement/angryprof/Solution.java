@@ -6,67 +6,68 @@ import java.util.Scanner;
 
 /**
  * Angry Professor Challenge
- * 
+ *
  * @see: https://www.hackerrank.com/challenges/angry-professor
  */
 public class Solution {
 
-	public static void main( String[] args ) {
+    public static void main(String[] args) {
 
-		for( ClassAttendance attendance : getClassAttendances() ) {
-			System.out.println( attendance.isProfessorAngry() ? "YES" : "NO" );
-		}
-	}
+        for (ClassAttendance attendance : getClassAttendances()) {
+            System.out.println(attendance.isProfessorAngry() ? "YES" : "NO");
+        }
+    }
 
-	private static List<ClassAttendance> getClassAttendances() {
-		Scanner scanner = new Scanner( System.in );
+    private static List<ClassAttendance> getClassAttendances() {
+        Scanner scanner = new Scanner(System.in);
 
-		int numberClasses = scanner.nextInt();
+        int numberClasses = scanner.nextInt();
 
-		List<ClassAttendance> attendances = new ArrayList<>( numberClasses );
+        List<ClassAttendance> attendances = new ArrayList<>(numberClasses);
 
-		for ( int i = 0; i < numberClasses; i++ ) {
+        for (int i = 0; i < numberClasses; i++) {
 
-			int size = scanner.nextInt();
-			int minRequired = scanner.nextInt();
+            int size = scanner.nextInt();
+            int minRequired = scanner.nextInt();
 
-			ClassAttendance attendance = new ClassAttendance( size, minRequired );
+            ClassAttendance attendance = new ClassAttendance(size, minRequired);
 
-			for ( int j = 0; j < attendance.classSize; j++ ) {
-				attendance.arrivalTimes.add( scanner.nextInt() );
-			}
+            for (int j = 0; j < attendance.classSize; j++) {
+                attendance.arrivalTimes.add(scanner.nextInt());
+            }
 
-			attendances.add( attendance );
-		}
+            attendances.add(attendance);
+        }
 
-		scanner.close();
+        scanner.close();
 
-		return attendances;
-	}
+        return attendances;
+    }
 
-	static class ClassAttendance {
-		int classSize;
-		int minRequiredStudents;
-		List<Integer> arrivalTimes;
+    static class ClassAttendance {
 
-		ClassAttendance( int classSize, int minRequiredStudents ) {
-			this.classSize = classSize;
-			this.minRequiredStudents = minRequiredStudents;
-			this.arrivalTimes = new ArrayList<>( classSize );
-		}
+        int classSize;
+        int minRequiredStudents;
+        List<Integer> arrivalTimes;
 
-		/**
-		 * @return true if professor is angry at lack of punctual students and cancels class.
-		 */
-		boolean isProfessorAngry() {
-			int numberOnTime = 0;
-			for ( int time : arrivalTimes ) {
-				if ( time <= 0 ) {
-					numberOnTime++;
-				}
-			}
+        ClassAttendance(int classSize, int minRequiredStudents) {
+            this.classSize = classSize;
+            this.minRequiredStudents = minRequiredStudents;
+            this.arrivalTimes = new ArrayList<>(classSize);
+        }
 
-			return numberOnTime < minRequiredStudents;
-		}
-	}
+        /**
+         * @return true if professor is angry at lack of punctual students and cancels class.
+         */
+        boolean isProfessorAngry() {
+            int numberOnTime = 0;
+            for (int time : arrivalTimes) {
+                if (time <= 0) {
+                    numberOnTime++;
+                }
+            }
+
+            return numberOnTime < minRequiredStudents;
+        }
+    }
 }

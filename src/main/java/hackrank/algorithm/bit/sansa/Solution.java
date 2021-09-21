@@ -7,52 +7,52 @@ import java.util.Scanner;
 
 /**
  * Sansa and XOR Challenge
- * 
+ *
  * @see https://www.hackerrank.com/challenges/sansa-and-xor
  */
 public class Solution {
 
-	public static void main( String[] args ) {
-		for ( Integer[] numbers : readInput( System.in ) ) {
-			System.out.println( contiguousXorAll( numbers ) );
-		}
-	}
+    public static void main(String[] args) {
+        for (Integer[] numbers : readInput(System.in)) {
+            System.out.println(contiguousXorAll(numbers));
+        }
+    }
 
-	private static int contiguousXorAll( Integer[] numbers ) {
-		
-		if ( numbers.length % 2 == 0 ) {
-			return 0;
-		} else {			
-			int total = 0;
-			for ( int i = 0; i < numbers.length; i += 2 ) {
-				total ^= numbers[ i ];
-			}
-			return total;
-		}
-	}
+    private static int contiguousXorAll(Integer[] numbers) {
 
-	public static List<Integer[]> readInput( InputStream input ) {
+        if (numbers.length % 2 == 0) {
+            return 0;
+        } else {
+            int total = 0;
+            for (int i = 0; i < numbers.length; i += 2) {
+                total ^= numbers[i];
+            }
+            return total;
+        }
+    }
 
-		Scanner scanner = new Scanner( input );
+    public static List<Integer[]> readInput(InputStream input) {
 
-		int testCases = scanner.nextInt();
-		List<Integer[]> data = new ArrayList<>( testCases );
+        Scanner scanner = new Scanner(input);
 
-		for ( int i = 0; i < testCases; i++ ) {
+        int testCases = scanner.nextInt();
+        List<Integer[]> data = new ArrayList<>(testCases);
 
-			int length = scanner.nextInt();
-			Integer[] numbers = new Integer[ length ];
+        for (int i = 0; i < testCases; i++) {
 
-			for ( int j = 0; j < length; j++ ) {
-				numbers[ j ] = scanner.nextInt();
-			}
+            int length = scanner.nextInt();
+            Integer[] numbers = new Integer[length];
 
-			data.add( numbers );
-		}
+            for (int j = 0; j < length; j++) {
+                numbers[j] = scanner.nextInt();
+            }
 
-		scanner.close();
+            data.add(numbers);
+        }
 
-		return data;
-	}
+        scanner.close();
+
+        return data;
+    }
 
 }

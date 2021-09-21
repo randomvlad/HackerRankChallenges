@@ -8,96 +8,96 @@ import java.util.Scanner;
 
 /**
  * Cutting Boards Challenge
- * 
+ *
  * @see https://www.hackerrank.com/challenges/board-cutting
  */
 public class Solution {
 
-	public static void main( String[] args ) {
+    public static void main(String[] args) {
 
-		for ( Board board : readInput( System.in ) ) {
-			System.out.println( board.findMinCutCost() % 1_000_000_007 );
-		}
-	}
+        for (Board board : readInput(System.in)) {
+            System.out.println(board.findMinCutCost() % 1_000_000_007);
+        }
+    }
 
-	public static List<Board> readInput( InputStream stream ) {
+    public static List<Board> readInput(InputStream stream) {
 
-		Scanner scanner = new Scanner( stream );
+        Scanner scanner = new Scanner(stream);
 
-		int size = scanner.nextInt();
-		List<Board> boards = new ArrayList<>( size );
+        int size = scanner.nextInt();
+        List<Board> boards = new ArrayList<>(size);
 
-		for ( int i = 0; i < size; i++ ) {
+        for (int i = 0; i < size; i++) {
 
-			int height = scanner.nextInt();
-			int width = scanner.nextInt();
+            int height = scanner.nextInt();
+            int width = scanner.nextInt();
 
-			List<Long> costHeights = new ArrayList<>( height - 1 );
-			for ( int h = 0; h < height - 1; h++ ) {
-				costHeights.add( scanner.nextLong() );
-			}
+            List<Long> costHeights = new ArrayList<>(height - 1);
+            for (int h = 0; h < height - 1; h++) {
+                costHeights.add(scanner.nextLong());
+            }
 
-			List<Long> costWidths = new ArrayList<>( width - 1 );
-			for ( int w = 0; w < width - 1; w++ ) {
-				costWidths.add( scanner.nextLong() );
-			}
+            List<Long> costWidths = new ArrayList<>(width - 1);
+            for (int w = 0; w < width - 1; w++) {
+                costWidths.add(scanner.nextLong());
+            }
 
-			boards.add( new Board( costHeights, costWidths ) );
-		}
+            boards.add(new Board(costHeights, costWidths));
+        }
 
-		scanner.close();
+        scanner.close();
 
-		return boards;
-	}
+        return boards;
+    }
 
 }
 
 class Board {
 
-	private List<Long> costHeight;
-	private List<Long> costWidth;
+    private List<Long> costHeight;
+    private List<Long> costWidth;
 
-	Board( List<Long> costHeight, List<Long> costWidth ) {
-		this.costHeight = costHeight;
-		this.costWidth = costWidth;
-	}
+    Board(List<Long> costHeight, List<Long> costWidth) {
+        this.costHeight = costHeight;
+        this.costWidth = costWidth;
+    }
 
-	public long findMinCutCost() {
+    public long findMinCutCost() {
 
-		Collections.sort( costHeight, Collections.reverseOrder() );
-		Collections.sort( costWidth, Collections.reverseOrder() );
-		
-		int h = 0;
-		int w = 0;
-		int segmentsWidth = 1;
-		int segmentsHeight = 1;
-		long cost = 0;
-		
-		while ( h < costHeight.size() || w < costWidth.size() ) {
+        Collections.sort(costHeight, Collections.reverseOrder());
+        Collections.sort(costWidth, Collections.reverseOrder());
 
-			long costWidth = getCostWidth( w );
-			long costHeight = getCostHeight( h );
+        int h = 0;
+        int w = 0;
+        int segmentsWidth = 1;
+        int segmentsHeight = 1;
+        long cost = 0;
 
-			if ( costWidth > costHeight ) {
-				cost += costWidth * segmentsHeight;
-				segmentsWidth++;
-				w++;
-			} else {
-				cost += costHeight * segmentsWidth;
-				segmentsHeight++;
-				h++;
-			}
-		}
+        while (h < costHeight.size() || w < costWidth.size()) {
 
-		return cost;
-	}
+            long costWidth = getCostWidth(w);
+            long costHeight = getCostHeight(h);
 
-	public long getCostHeight( int index ) {
-		return index >= 0 && index < costHeight.size() ? costHeight.get( index ) : -1;
-	}
+            if (costWidth > costHeight) {
+                cost += costWidth * segmentsHeight;
+                segmentsWidth++;
+                w++;
+            } else {
+                cost += costHeight * segmentsWidth;
+                segmentsHeight++;
+                h++;
+            }
+        }
 
-	public long getCostWidth( int index ) {
-		return index >= 0 && index < costWidth.size() ? costWidth.get( index ) : -1;
-	}
+        return cost;
+    }
+
+    public long getCostHeight(int index) {
+        return index >= 0 && index < costHeight.size() ? costHeight.get(index) : -1;
+    }
+
+    public long getCostWidth(int index) {
+        return index >= 0 && index < costWidth.size() ? costWidth.get(index) : -1;
+    }
 
 }
