@@ -1,6 +1,10 @@
 # Hacker Rank Challenges
 
-Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay sharp and brush up on Computer Science fundamentals that so frequently pop up in tech interviews. Solutions are coded in Java 8 and pass all available tests to earn full points on each problem. Please note that when copy pasting the code into HackerRank's UI, the first line of package declaration needs to be deleted (HackerRank does not allow package names).  
+Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay
+sharp and brush up on Computer Science fundamentals that so frequently pop up in FAANG style tech interviews. Solutions
+are coded in Java 8 and pass all available tests to earn full points on each problem. Please note that when copy pasting
+the code into HackerRank's UI, the first line of package declaration needs to be deleted (HackerRank does not allow
+package names).
 
 Total problems solved: 72
 
@@ -8,8 +12,7 @@ Total problems solved: 72
 
 | Category | Name | Difficulty | Problem | Solution |
 | --- | --- |:---:| --- | --- |
-| __Imlementation (18):__ | | | | | 
-| | Angry Professor| Easy | [Problem](https://www.hackerrank.com/challenges/angry-professor) | [Solution](src/main/java/hackrank/algorithm/implement/angryprof/Solution.java) |
+| __Implementation (17):__ | | | | |
 | | Sherlock and The Beast| Easy | [Problem](https://www.hackerrank.com/challenges/sherlock-and-the-beast) | [Solution](src/main/java/hackrank/algorithm/implement/sherlock/Solution.java) |
 | | Utopian Tree| Easy | [Problem](https://www.hackerrank.com/challenges/utopian-tree) | [Solution](src/main/java/hackrank/algorithm/implement/utopian/Solution.java) |
 | | Find Digits| Easy | [Problem](https://www.hackerrank.com/challenges/find-digits) | [Solution](src/main/java/hackrank/algorithm/implement/digit/Solution.java) |
@@ -101,3 +104,16 @@ Total problems solved: 72
 | --- | --- |:---:| --- | --- |
 | __Arrays (1):__ | | | | | 
 | | Sparse Arrays | Difficult | [Problem](https://www.hackerrank.com/challenges/sparse-arrays) | [Solution](src/main/java/hackrank/datastruct/array/sparse/Solution.java) |
+
+---
+
+# Version 2.0 (WIP)
+
+Note: Work in progress to update all existing solutions.
+
+## Algorithms
+
+| Category | Problem | Difficulty | Solution |
+| --- | --- |:---:| --- |
+| __Implementation (1):__ | | | | 
+| | [Angry Professor](https://www.hackerrank.com/challenges/angry-professor)| Easy | [Result](src/main/java/hackrank/algorithm/implement/angryprof/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/angryprof/ResultTest.java) |
