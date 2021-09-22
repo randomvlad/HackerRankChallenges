@@ -28,21 +28,24 @@ public class Result {
     }
 
     public static String findDecentNumber(int length) {
+        String decentNumber = "-1";
         switch (length % 3) {
             case 0:
-                return repeat(BLOCK_DECENT_FIVES, length / 3);
+                decentNumber = repeat(BLOCK_DECENT_FIVES, length / 3);
+                break;
             case 1:
                 if (length - 10 >= 0) {
                     String fillerLengthTen = BLOCK_DECENT_THREES + BLOCK_DECENT_THREES;
-                    return repeat(BLOCK_DECENT_FIVES, ((length - 10) / 3)) + fillerLengthTen;
+                    decentNumber = repeat(BLOCK_DECENT_FIVES, ((length - 10) / 3)) + fillerLengthTen;
                 }
+                break;
             case 2:
                 if (length - 3 >= 0) {
-                    return repeat(BLOCK_DECENT_FIVES, ((length - 3) / 3)) + BLOCK_DECENT_THREES;
+                    decentNumber = repeat(BLOCK_DECENT_FIVES, ((length - 3) / 3)) + BLOCK_DECENT_THREES;
+                    break;
                 }
         }
-
-        return "-1";
+        return decentNumber;
     }
 
     /**

@@ -7,9 +7,13 @@ import org.junit.jupiter.api.Test;
 public class ResultTest {
 
     @Test
-    public void findDecentNumber_LengthOne_NoDecentNumberExists() {
-        String decentNumber = Result.findDecentNumber(1);
-        assertThat(decentNumber).isEqualTo("-1");
+    public void findDecentNumber_LengthsUnderTenWithNoDecent_NoDecentNumberExists() {
+        int[] lengthWithNoDecentNumbers = { 1, 2, 4, 7 };
+
+        for (int length : lengthWithNoDecentNumbers) {
+            String decentNumber = Result.findDecentNumber(length);
+            assertThat(decentNumber).isEqualTo("-1");
+        }
     }
 
     @Test
