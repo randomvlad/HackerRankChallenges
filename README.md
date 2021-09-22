@@ -12,8 +12,7 @@ Total problems solved: 72
 
 | Category | Name | Difficulty | Problem | Solution |
 | --- | --- |:---:| --- | --- |
-| __Implementation (17):__ | | | | |
-| | Sherlock and The Beast| Easy | [Problem](https://www.hackerrank.com/challenges/sherlock-and-the-beast) | [Solution](src/main/java/hackrank/algorithm/implement/sherlock/Solution.java) |
+| __Implementation (16):__ | | | | |
 | | Utopian Tree| Easy | [Problem](https://www.hackerrank.com/challenges/utopian-tree) | [Solution](src/main/java/hackrank/algorithm/implement/utopian/Solution.java) |
 | | Find Digits| Easy | [Problem](https://www.hackerrank.com/challenges/find-digits) | [Solution](src/main/java/hackrank/algorithm/implement/digit/Solution.java) |
 | | Sherlock and Squares| Easy | [Problem](https://www.hackerrank.com/challenges/sherlock-and-squares) | [Solution](src/main/java/hackrank/algorithm/implement/squares/Solution.java) |
@@ -115,5 +114,6 @@ Note: Work in progress to update all existing solutions.
 
 | Category | Problem | Difficulty | Solution |
 | --- | --- |:---:| --- |
-| __Implementation (1):__ | | | | 
+| __Implementation (2):__ | | | | 
 | | [Angry Professor](https://www.hackerrank.com/challenges/angry-professor)| Easy | [Result](src/main/java/hackrank/algorithm/implement/angryprof/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/angryprof/ResultTest.java) |
+| | [Sherlock and The Beast](https://www.hackerrank.com/challenges/sherlock-and-the-beast)| Easy | [Result](src/main/java/hackrank/algorithm/implement/sherlock/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/sherlock/ResultTest.java) |
