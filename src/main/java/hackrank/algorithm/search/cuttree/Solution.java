@@ -212,7 +212,8 @@ public class Solution {
             return value + childrenTotal;
         }
 
-        @Override public String toString() {
+        @Override
+        public String toString() {
             return "Node (" + id + "): value = " + value + ", total = " + total;
         }
     }

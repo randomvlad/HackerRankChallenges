@@ -5,9 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * Bigger is Greater Challenge
- *
- * @see https://www.hackerrank.com/challenges/bigger-is-greater
+ * @see <a href="https://www.hackerrank.com/challenges/bigger-is-greater">Bigger is Greater Challenge</a>
  */
 public class Solution {
 

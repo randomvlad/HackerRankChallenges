@@ -141,11 +141,13 @@ class Node implements Comparable<Node> {
         edges.add(new Edge(square, weight));
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return String.valueOf(id);
     }
 
-    @Override public int compareTo(Node other) {
+    @Override
+    public int compareTo(Node other) {
         return Integer.compare(minDistance, other.minDistance);
     }
 }

@@ -111,7 +111,8 @@ class Node {
         edges.add(new Edge(square, weight));
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return String.valueOf(id);
     }
 
@@ -127,11 +128,13 @@ class Edge implements Comparable<Edge> {
         this.weight = weight;
     }
 
-    @Override public int compareTo(Edge other) {
+    @Override
+    public int compareTo(Edge other) {
         return Integer.compare(weight, other.weight);
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return "-" + weight + "-> Node(" + target.id + ")";
     }
 

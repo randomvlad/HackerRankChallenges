@@ -145,7 +145,8 @@ class Node {
         return children;
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return String.valueOf(id);
     }
 
@@ -159,7 +160,8 @@ class Edge {
         this.target = target;
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return "-> N(" + target.id + ")";
     }
 

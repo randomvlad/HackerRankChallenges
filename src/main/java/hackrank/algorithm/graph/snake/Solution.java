@@ -10,18 +10,15 @@ import java.util.PriorityQueue;
 import java.util.Scanner;
 
 /**
- * Snakes and Ladders Challenge
- *
- * @see https://www.hackerrank.com/challenges/the-quickest-way-up
+ * @see <a href="https://www.hackerrank.com/challenges/the-quickest-way-up">Snakes and Ladders: The Quickest Way Up</a>
  */
 public class Solution {
 
     public static void main(String[] args) {
 
         for (Board board : readInput(System.in)) {
-            System.out.println(board.calculateMoves(1, 100));
+            System.out.println(board.quickestWayUp(1, 100));
         }
-
     }
 
     private static List<Board> readInput(InputStream input) {
@@ -44,161 +41,162 @@ public class Solution {
                 snakes.put(scanner.nextInt(), scanner.nextInt());
             }
 
-            boards.add(new Board(ladders, snakes));
+            boards.add(new Board(100, ladders, snakes));
         }
 
         scanner.close();
 
         return boards;
     }
-}
 
-class Board {
+    static class Board {
 
-    public Map<Integer, Square> squares;
-    public Map<Integer, Integer> ladders;
-    public Map<Integer, Integer> snakes;
+        public Map<Integer, Square> squares;
+        public Map<Integer, Integer> ladders;
+        public Map<Integer, Integer> snakes;
 
-    public Board(Map<Integer, Integer> ladders, Map<Integer, Integer> snakes) {
-        this(100, ladders, snakes);
-    }
+        public Board(int numberSquares, Map<Integer, Integer> ladders, Map<Integer, Integer> snakes) {
+            this.squares = new HashMap<>(numberSquares, 1.0f);
+            this.ladders = ladders;
+            this.snakes = snakes;
 
-    public Board(int numberSquares, Map<Integer, Integer> ladders, Map<Integer, Integer> snakes) {
-        this.squares = new HashMap<>(numberSquares, 1.0f);
-        this.ladders = ladders;
-        this.snakes = snakes;
-
-        initialize(numberSquares);
-    }
-
-    private void initialize(int numberSquares) {
-
-        for (int squareId = 1; squareId <= numberSquares; squareId++) {
-            add(squareId);
+            initialize(numberSquares);
         }
 
-        for (int squareId = 1; squareId < numberSquares; squareId++) {
-            connect(squareId, findNextSquares(squareId));
-        }
-    }
+        private void initialize(int numberSquares) {
 
-    public List<Integer> findNextSquares(int startId) {
-        List<Integer> next = new ArrayList<>();
+            for (int squareId = 1; squareId <= numberSquares; squareId++) {
+                add(squareId);
+            }
 
-        int max = startId + 6;
-        max = max > squares.size() ? squares.size() : max;
-
-        for (int id = startId + 1; id <= max; id++) {
-            if (ladders.containsKey(id)) {
-                next.add(ladders.get(id));
-            } else if (snakes.containsKey(id)) {
-                next.add(snakes.get(id));
-            } else {
-                next.add(id);
+            for (int squareId = 1; squareId < numberSquares; squareId++) {
+                connect(squareId, findNextSquares(squareId));
             }
         }
 
-        return next;
-    }
+        public List<Integer> findNextSquares(int startId) {
+            List<Integer> next = new ArrayList<>();
 
-    public void add(int squareId) {
-        squares.put(squareId, new Square(squareId));
-    }
+            int max = startId + 6;
+            max = Math.min(max, squares.size());
 
-    public void connect(int idFrom, int idTo) {
-        Square from = squares.get(idFrom);
-        Square to = squares.get(idTo);
-        from.connect(to, 1);
-    }
+            for (int id = startId + 1; id <= max; id++) {
+                if (ladders.containsKey(id)) {
+                    next.add(ladders.get(id));
+                } else if (snakes.containsKey(id)) {
+                    next.add(snakes.get(id));
+                } else {
+                    next.add(id);
+                }
+            }
 
-    public void connect(int idFrom, List<Integer> idsTo) {
-        for (int idTo : idsTo) {
-            connect(idFrom, idTo);
+            return next;
         }
-    }
 
-    private void computePaths(Square squareStart) {
+        public void add(int squareId) {
+            squares.put(squareId, new Square(squareId));
+        }
 
-        squareStart.minDistance = 0;
-        PriorityQueue<Square> vertexQueue = new PriorityQueue<Square>();
-        vertexQueue.add(squareStart);
+        public void connect(int idFrom, int idTo) {
+            Square from = squares.get(idFrom);
+            Square to = squares.get(idTo);
+            from.connect(to, 1);
+        }
 
-        while (!vertexQueue.isEmpty()) {
-            Square squareFrom = vertexQueue.poll();
+        public void connect(int idFrom, List<Integer> idsTo) {
+            for (int idTo : idsTo) {
+                connect(idFrom, idTo);
+            }
+        }
 
-            for (Connection connection : squareFrom.connections) {
-                Square nodeTo = connection.target;
+        private void computePaths(Square squareStart) {
 
-                int distanceTo = squareFrom.minDistance + connection.weight;
+            squareStart.minDistance = 0;
+            PriorityQueue<Square> vertexQueue = new PriorityQueue<Square>();
+            vertexQueue.add(squareStart);
 
-                if (distanceTo < nodeTo.minDistance) {
-                    vertexQueue.remove(nodeTo);
+            while (!vertexQueue.isEmpty()) {
+                Square squareFrom = vertexQueue.poll();
 
-                    nodeTo.minDistance = distanceTo;
-                    nodeTo.previous = squareFrom;
-                    vertexQueue.add(nodeTo);
+                for (Connection connection : squareFrom.connections) {
+                    Square nodeTo = connection.target;
+
+                    int distanceTo = squareFrom.minDistance + connection.weight;
+
+                    if (distanceTo < nodeTo.minDistance) {
+                        vertexQueue.remove(nodeTo);
+
+                        nodeTo.minDistance = distanceTo;
+                        nodeTo.previous = squareFrom;
+                        vertexQueue.add(nodeTo);
+                    }
                 }
             }
         }
-    }
 
-    public List<Square> findPathTo(int startId, int endId) {
-        Square start = squares.get(startId);
+        public List<Square> findPathTo(int startId, int endId) {
+            Square start = squares.get(startId);
 
-        computePaths(start);
+            computePaths(start);
 
-        List<Square> path = new ArrayList<Square>();
-        Square end = squares.get(endId);
+            List<Square> path = new ArrayList<Square>();
+            Square end = squares.get(endId);
 
-        if (end.previous != null) {
-            for (Square square = end; square != null; square = square.previous) {
-                path.add(square);
+            if (end.previous != null) {
+                for (Square square = end; square != null; square = square.previous) {
+                    path.add(square);
+                }
             }
+
+            Collections.reverse(path);
+            return path;
         }
 
-        Collections.reverse(path);
-        return path;
+        /**
+         * @return Least number of dice rolls for quickest way up from {@code startId} to {@code endId}
+         */
+        public int quickestWayUp(int startId, int endId) {
+            return findPathTo(startId, endId).size() - 1;
+        }
     }
 
-    public int calculateMoves(int startId, int endId) {
-        return findPathTo(startId, endId).size() - 1;
-    }
-}
+    static class Square implements Comparable<Square> {
 
-class Square implements Comparable<Square> {
+        public int id;
+        public List<Connection> connections;
 
-    public int id;
-    public List<Connection> connections;
+        public int minDistance = Integer.MAX_VALUE;
+        public Square previous;
 
-    public int minDistance = Integer.MAX_VALUE;
-    public Square previous;
+        public Square(int id) {
+            this.id = id;
+            this.connections = new ArrayList<>();
+        }
 
-    public Square(int id) {
-        this.id = id;
-        this.connections = new ArrayList<>();
-    }
+        public void connect(Square square, int weight) {
+            connections.add(new Connection(square, weight));
+        }
 
-    public void connect(Square square, int weight) {
-        connections.add(new Connection(square, weight));
-    }
+        @Override
+        public String toString() {
+            return String.valueOf(id);
+        }
 
-    @Override public String toString() {
-        return String.valueOf(id);
-    }
-
-    @Override public int compareTo(Square other) {
-        return Integer.compare(minDistance, other.minDistance);
-    }
-}
-
-class Connection {
-
-    public Square target;
-    public int weight;
-
-    public Connection(Square target, int weight) {
-        this.target = target;
-        this.weight = weight;
+        @Override
+        public int compareTo(Square other) {
+            return Integer.compare(minDistance, other.minDistance);
+        }
     }
 
+    static class Connection {
+
+        public Square target;
+        public int weight;
+
+        public Connection(Square target, int weight) {
+            this.target = target;
+            this.weight = weight;
+        }
+
+    }
 }

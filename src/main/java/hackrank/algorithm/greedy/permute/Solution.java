@@ -94,7 +94,8 @@ class Sequence {
         indices[numberTo] = indexFrom;
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return numbers.stream().map(n -> String.valueOf(n)).collect(Collectors.joining(" "));
     }
 

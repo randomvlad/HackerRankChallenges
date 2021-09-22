@@ -89,7 +89,8 @@ class Node {
         this.id = id;
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return String.valueOf(id);
     }
 
@@ -107,7 +108,8 @@ class Edge implements Comparable<Edge> {
         this.weight = weight;
     }
 
-    @Override public int compareTo(Edge other) {
+    @Override
+    public int compareTo(Edge other) {
 
         int diff = Integer.compare(weight, other.weight);
         if (diff == 0) {
@@ -117,7 +119,8 @@ class Edge implements Comparable<Edge> {
         }
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return "N(" + to.id + ") --" + weight + "-- N(" + from.id + ")";
     }
 

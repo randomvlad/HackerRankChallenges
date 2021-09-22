@@ -131,7 +131,8 @@ class MatrixRotater {
         return new int[] { rowStep, colStep };
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
 
         StringBuilder sb = new StringBuilder();
 

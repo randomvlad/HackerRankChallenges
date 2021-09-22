@@ -91,7 +91,8 @@ class Grid {
         return data.length;
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
 
         StringBuilder sb = new StringBuilder();
 
