@@ -6,7 +6,7 @@ are coded in Java 8 and pass all available tests to earn full points on each pro
 the code into HackerRank's UI, the first line of package declaration needs to be deleted (HackerRank does not allow
 package names).
 
-Total problems solved: 72
+Total problems solved: 73
 
 ## Algorithms
 
@@ -117,3 +117,10 @@ Note: Work in progress to update all existing solutions.
 | | [Find Digits](https://www.hackerrank.com/challenges/find-digits)| Easy | [Result](src/main/java/hackrank/algorithm/implement/digit/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/digit/ResultTest.java) |
 | | [Sherlock and Squares](https://www.hackerrank.com/challenges/sherlock-and-squares) | Easy | [Result](src/main/java/hackrank/algorithm/implement/squares/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/squares/ResultTest.java) |
 | | [Service Lane](https://www.hackerrank.com/challenges/service-lane)| Easy | [Result](src/main/java/hackrank/algorithm/implement/lane/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/lane/ResultTest.java) |
+
+## Data Structures
+
+| Category | Problem | Difficulty | Solution |
+| --- | --- |:---:| --- |
+| __Heap (1):__ | | | | 
+| | [Find the Running Median](https://www.hackerrank.com/challenges/find-the-running-median) | Hard | [Result](src/main/java/hackrank/datastruct/heap/runningmedian/Result.java) - [Unit Test](src/test/java/hackrank/datastruct/heap/runningmedian/ResultTest.java) |
