@@ -12,8 +12,7 @@ Total problems solved: 72
 
 | Category | Name | Difficulty | Problem | Solution |
 | --- | --- |:---:| --- | --- |
-| __Implementation (15):__ | | | | |
-| | Find Digits| Easy | [Problem](https://www.hackerrank.com/challenges/find-digits) | [Solution](src/main/java/hackrank/algorithm/implement/digit/Solution.java) |
+| __Implementation (14):__ | | | | |
 | | Sherlock and Squares| Easy | [Problem](https://www.hackerrank.com/challenges/sherlock-and-squares) | [Solution](src/main/java/hackrank/algorithm/implement/squares/Solution.java) |
 | | Service Lane| Easy | [Problem](https://www.hackerrank.com/challenges/service-lane) | [Solution](src/main/java/hackrank/algorithm/implement/lane/Solution.java) |
 | | Cut the Sticks| Easy | [Problem](https://www.hackerrank.com/challenges/cut-the-sticks) | [Solution](src/main/java/hackrank/algorithm/implement/stick/Solution.java) |
@@ -113,7 +112,8 @@ Note: Work in progress to update all existing solutions.
 
 | Category | Problem | Difficulty | Solution |
 | --- | --- |:---:| --- |
-| __Implementation (3):__ | | | | 
+| __Implementation (4):__ | | | | 
 | | [Angry Professor](https://www.hackerrank.com/challenges/angry-professor)| Easy | [Result](src/main/java/hackrank/algorithm/implement/angryprof/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/angryprof/ResultTest.java) |
 | | [Sherlock and The Beast](https://www.hackerrank.com/challenges/sherlock-and-the-beast)| Easy | [Result](src/main/java/hackrank/algorithm/implement/sherlock/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/sherlock/ResultTest.java) |
 | | [Utopian Tree](https://www.hackerrank.com/challenges/utopian-tree)| Easy | [Result](src/main/java/hackrank/algorithm/implement/utopian/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/utopian/ResultTest.java) |
+| | [Find Digits](https://www.hackerrank.com/challenges/find-digits)| Easy | [Result](src/main/java/hackrank/algorithm/implement/digit/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/digit/ResultTest.java) |
