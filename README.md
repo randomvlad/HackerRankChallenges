@@ -93,13 +93,6 @@ Total problems solved: 73
 | | Sansa and XOR | Moderate | [Problem](https://www.hackerrank.com/challenges/sansa-and-xor) | [Solution](src/main/java/hackrank/algorithm/bit/sansa/Solution.java) |
 | | Flipping Bits | Easy | [Problem](https://www.hackerrank.com/challenges/flipping-bits) | [Solution](src/main/java/hackrank/algorithm/bit/flip/Solution.java) |
 
-## Data Structures
-
-| Category | Name | Difficulty | Problem | Solution |
-| --- | --- |:---:| --- | --- |
-| __Arrays (1):__ | | | | | 
-| | Sparse Arrays | Difficult | [Problem](https://www.hackerrank.com/challenges/sparse-arrays) | [Solution](src/main/java/hackrank/datastruct/array/sparse/Solution.java) |
-
 ---
 
 # Version 2.0 (WIP)
@@ -122,5 +115,8 @@ Note: Work in progress to update all existing solutions.
 
 | Category | Problem | Difficulty | Solution |
 | --- | --- |:---:| --- |
+| __Arrays (1):__ | | | |
+| | [Sparse Arrays](https://www.hackerrank.com/challenges/sparse-arrays) | Medium | [Result](src/main/java/hackrank/datastruct/array/sparse/Result.java) - [Unit Test](src/test/java/hackrank/datastruct/array/sparse/ResultTest.java) |
+| | | | | 
 | __Heap (1):__ | | | | 
 | | [Find the Running Median](https://www.hackerrank.com/challenges/find-the-running-median) | Hard | [Result](src/main/java/hackrank/datastruct/heap/runningmedian/Result.java) - [Unit Test](src/test/java/hackrank/datastruct/heap/runningmedian/ResultTest.java) |
