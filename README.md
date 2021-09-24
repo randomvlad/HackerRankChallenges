@@ -39,14 +39,13 @@ Total problems solved: 73
 | | Palindrome Index | Easy | [Problem](https://www.hackerrank.com/challenges/palindrome-index) | [Solution](src/main/java/hackrank/algorithm/string/palindrome/Solution.java) |
 | | Common Child | Difficult | [Problem](https://www.hackerrank.com/challenges/common-child) | [Solution](src/main/java/hackrank/algorithm/string/child/Solution.java) |
 | | Sherlock and Valid Strings | Difficult | [Problem](https://www.hackerrank.com/challenges/sherlock-and-valid-string) | [Solution](src/main/java/hackrank/algorithm/string/sherlock/Solution.java) |
-| | | | | 
-| __Sorting (10):__ | | | | |
+| | | | |
+| __Sorting (9):__ | | | | |
 | | Insertion Sort Part 1 | Easy | [Problem](https://www.hackerrank.com/challenges/insertionsort1) | [Solution](src/main/java/hackrank/algorithm/sort/insert1/Solution.java) |
 | | Insertion Sort Part 2 | Easy | [Problem](https://www.hackerrank.com/challenges/insertionsort2) | [Solution](src/main/java/hackrank/algorithm/sort/insert2/Solution.java) |  
 | | Running Time of Algorithms | Easy | [Problem](https://www.hackerrank.com/challenges/runningtime) | [Solution](src/main/java/hackrank/algorithm/sort/insertrun/Solution.java) |
 | | Quicksort Part 1 | Easy | [Problem](https://www.hackerrank.com/challenges/quicksort2) | [Solution](src/main/java/hackrank/algorithm/sort/quick/Solution.java) |
 | | Quicksort Part 2 | Moderate | [Problem](https://www.hackerrank.com/challenges/quicksort3) | [Solution](src/main/java/hackrank/algorithm/sort/quickinplace/Solution.java) |
-| | Bigger is Greater | Moderate | [Problem](https://www.hackerrank.com/challenges/bigger-is-greater) | [Solution](src/main/java/hackrank/algorithm/sort/bigger/Solution.java) |
 | | Counting Sort Part 1 | Easy | [Problem](https://www.hackerrank.com/challenges/countingsort1) | [Solution](src/main/java/hackrank/algorithm/sort/count1/Solution.java) |
 | | Counting Sort Part 2 | Easy | [Problem](https://www.hackerrank.com/challenges/countingsort2) | [Solution](src/main/java/hackrank/algorithm/sort/count2/Solution.java) |
 | | Counting Sort Part 3 | Easy | [Problem](https://www.hackerrank.com/challenges/countingsort3) | [Solution](src/main/java/hackrank/algorithm/sort/count3/Solution.java) |
@@ -103,13 +102,14 @@ Note: Work in progress to update all existing solutions.
 
 | Category | Problem | Difficulty | Solution |
 | --- | --- |:---:| --- |
-| __Implementation (6):__ | | | | 
+| __Implementation (7):__ | | | | 
 | | [Angry Professor](https://www.hackerrank.com/challenges/angry-professor)| Easy | [Result](src/main/java/hackrank/algorithm/implement/angryprof/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/angryprof/ResultTest.java) |
 | | [Sherlock and The Beast](https://www.hackerrank.com/challenges/sherlock-and-the-beast)| Easy | [Result](src/main/java/hackrank/algorithm/implement/sherlock/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/sherlock/ResultTest.java) |
 | | [Utopian Tree](https://www.hackerrank.com/challenges/utopian-tree)| Easy | [Result](src/main/java/hackrank/algorithm/implement/utopian/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/utopian/ResultTest.java) |
 | | [Find Digits](https://www.hackerrank.com/challenges/find-digits)| Easy | [Result](src/main/java/hackrank/algorithm/implement/digit/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/digit/ResultTest.java) |
 | | [Sherlock and Squares](https://www.hackerrank.com/challenges/sherlock-and-squares) | Easy | [Result](src/main/java/hackrank/algorithm/implement/squares/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/squares/ResultTest.java) |
 | | [Service Lane](https://www.hackerrank.com/challenges/service-lane)| Easy | [Result](src/main/java/hackrank/algorithm/implement/lane/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/lane/ResultTest.java) |
+| | [Bigger is Greater](https://www.hackerrank.com/challenges/bigger-is-greater) | Medium | [Result](src/main/java/hackrank/algorithm/implement/bigger/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/bigger/ResultTest.java) |
 
 ## Data Structures
 

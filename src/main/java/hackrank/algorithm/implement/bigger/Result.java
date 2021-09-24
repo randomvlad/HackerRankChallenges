@@ -1,46 +1,28 @@
-package hackrank.algorithm.sort.bigger;
+package hackrank.algorithm.implement.bigger;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 /**
- * @see <a href="https://www.hackerrank.com/challenges/bigger-is-greater">Bigger is Greater Challenge</a>
+ * @see <a href="https://www.hackerrank.com/challenges/bigger-is-greater">Bigger is Greater</a>
  */
-public class Solution {
+public class Result {
 
-    public static void main(String[] args) {
-        for (String word : readInputWords()) {
-            String greater = findGreaterWord(word);
-            System.out.println(greater != null ? greater : "no answer");
-        }
-    }
-
-    private static List<String> readInputWords() {
-        Scanner scanner = new Scanner(System.in);
-
-        int testCases = scanner.nextInt();
-        List<String> words = new ArrayList<>(testCases);
-        for (int i = 0; i < testCases; i++) {
-            words.add(scanner.next());
-        }
-
-        scanner.close();
-
-        return words;
-    }
-
-    public static String findGreaterWord(String word) {
-
-        char[] characters = word.toCharArray();
+    /**
+     * @param w word value
+     * @return Next lexicographically greater word directly following {@code w}. If a greater word does not exist,
+     * returns "no answer".
+     */
+    public static String biggerIsGreater(String w) {
+        char[] characters = w.toCharArray();
 
         for (int i = characters.length - 2; i >= 0; i--) {
             if (hasGreaterAfter(i, characters)) {
-                return word.substring(0, i) + findGreaterAfter(i, characters);
+                return w.substring(0, i) + findGreaterAfter(i, characters);
             }
         }
 
-        return null;
+        return "no answer";
     }
 
     private static String findGreaterAfter(int index, char[] characters) {
@@ -73,7 +55,6 @@ public class Solution {
     }
 
     private static boolean hasGreaterAfter(int index, char[] characters) {
-
         char max = characters[index + 1];
         for (int i = index + 2; i < characters.length; i++) {
             if (max < characters[i]) {
@@ -83,5 +64,4 @@ public class Solution {
 
         return max > characters[index];
     }
-
 }

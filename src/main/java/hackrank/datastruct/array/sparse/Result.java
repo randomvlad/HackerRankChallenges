@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * <p>Disclaimer: HackerRank named the problem "sparse arrays", but it nothing to do with actual sparse arrays.</p>
+ * <p>Disclaimer: HackerRank named the problem "sparse arrays", but it has nothing to do with actual sparse arrays.</p>
  *
  * @see <a href="https://www.hackerrank.com/challenges/sparse-arrays">Sparse Arrays</a>
  */
