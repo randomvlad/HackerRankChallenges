@@ -12,8 +12,7 @@ Total problems solved: 73
 
 | Category | Name | Difficulty | Problem | Solution |
 | --- | --- |:---:| --- | --- |
-| __Implementation (11):__ | | | | |
-| | Chocolate Feast| Easy | [Problem](https://www.hackerrank.com/challenges/chocolate-feast) | [Solution](src/main/java/hackrank/algorithm/implement/chocolate/Solution.java) |
+| __Implementation (10):__ | | | | |
 | | Caesar Cipher| Easy | [Problem](https://www.hackerrank.com/challenges/caesar-cipher-1) | [Solution](src/main/java/hackrank/algorithm/implement/caesar/Solution.java) |
 | | Grid Search| Moderate | [Problem](https://www.hackerrank.com/challenges/the-grid-search) | [Solution](src/main/java/hackrank/algorithm/implement/grid/Solution.java) |
 | | Cavity Map| Easy | [Problem](https://www.hackerrank.com/challenges/cavity-map) | [Solution](src/main/java/hackrank/algorithm/implement/cavity/Solution.java) |
@@ -101,7 +100,7 @@ Note: Work in progress to update all existing solutions.
 
 | Category | Problem | Difficulty | Solution |
 | --- | --- |:---:| --- |
-| __Implementation (8):__ | | | | 
+| __Implementation (9):__ | | | | 
 | | [Angry Professor](https://www.hackerrank.com/challenges/angry-professor)| Easy | [Result](src/main/java/hackrank/algorithm/implement/angryprof/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/angryprof/ResultTest.java) |
 | | [Sherlock and The Beast](https://www.hackerrank.com/challenges/sherlock-and-the-beast)| Easy | [Result](src/main/java/hackrank/algorithm/implement/sherlock/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/sherlock/ResultTest.java) |
 | | [Utopian Tree](https://www.hackerrank.com/challenges/utopian-tree)| Easy | [Result](src/main/java/hackrank/algorithm/implement/utopian/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/utopian/ResultTest.java) |
@@ -110,6 +109,7 @@ Note: Work in progress to update all existing solutions.
 | | [Service Lane](https://www.hackerrank.com/challenges/service-lane)| Easy | [Result](src/main/java/hackrank/algorithm/implement/lane/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/lane/ResultTest.java) |
 | | [Bigger is Greater](https://www.hackerrank.com/challenges/bigger-is-greater) | Medium | [Result](src/main/java/hackrank/algorithm/implement/bigger/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/bigger/ResultTest.java) |
 | | [Cut the Sticks](https://www.hackerrank.com/challenges/cut-the-sticks)| Easy | [Result](src/main/java/hackrank/algorithm/implement/stick/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/stick/ResultTest.java) |
+| | [Chocolate Feast](https://www.hackerrank.com/challenges/chocolate-feast)| Easy | [Result](src/main/java/hackrank/algorithm/implement/chocolate/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/chocolate/ResultTest.java) |
 
 ## Data Structures
 
