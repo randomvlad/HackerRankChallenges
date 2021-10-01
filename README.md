@@ -12,9 +12,6 @@ Total problems solved: 73
 
 | Category | Name | Difficulty | Problem | Solution |
 | --- | --- |:---:| --- | --- |
-| __Implementation (1):__ | | | | |
-| | Matrix Rotation | Difficult | [Problem](https://www.hackerrank.com/challenges/matrix-rotation-algo) | [Solution](src/main/java/hackrank/algorithm/implement/rotate/Solution.java) |
-| | | | | 
 | __Strings (12):__ | | | | |
 | | Funny String | Easy | [Problem](https://www.hackerrank.com/challenges/funny-string) | [Solution](src/main/java/hackrank/algorithm/string/funny/Solution.java) |
 | | Pangrams | Easy | [Problem](https://www.hackerrank.com/challenges/pangrams) | [Solution](src/main/java/hackrank/algorithm/string/pangram/Solution.java) |
@@ -110,6 +107,7 @@ Note: Work in progress to update all existing solutions.
 | | [Extra Long Factorial](https://www.hackerrank.com/challenges/extra-long-factorials) | Medium | [Result](src/main/java/hackrank/algorithm/implement/factorial/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/factorial/ResultTest.java) |
 | | [Taum and B'day Challenge](https://www.hackerrank.com/challenges/taum-and-bday) | Easy | [Result](src/main/java/hackrank/algorithm/implement/bday/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/bday/ResultTest.java) |
 | | [Time in Words](https://www.hackerrank.com/challenges/the-time-in-words) | Medium | [Result](src/main/java/hackrank/algorithm/implement/time/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/time/ResultTest.java) |
+| | [Matrix Layer Rotation](https://www.hackerrank.com/challenges/matrix-rotation-algo) | Hard | [Result](src/main/java/hackrank/algorithm/implement/rotate/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/rotate/ResultTest.java) |
 
 ## Data Structures
 
