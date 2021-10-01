@@ -12,8 +12,7 @@ Total problems solved: 73
 
 | Category | Name | Difficulty | Problem | Solution |
 | --- | --- |:---:| --- | --- |
-| __Implementation (2):__ | | | | |
-| | Time in Words | Moderate | [Problem](https://www.hackerrank.com/challenges/the-time-in-words) | [Solution](src/main/java/hackrank/algorithm/implement/time/Solution.java) |
+| __Implementation (1):__ | | | | |
 | | Matrix Rotation | Difficult | [Problem](https://www.hackerrank.com/challenges/matrix-rotation-algo) | [Solution](src/main/java/hackrank/algorithm/implement/rotate/Solution.java) |
 | | | | | 
 | __Strings (12):__ | | | | |
@@ -92,7 +91,7 @@ Note: Work in progress to update all existing solutions.
 
 | Category | Problem | Difficulty | Solution |
 | --- | --- |:---:| --- |
-| __Implementation (17):__ | | | | 
+| __Implementation (18):__ | | | | 
 | | [Angry Professor](https://www.hackerrank.com/challenges/angry-professor)| Easy | [Result](src/main/java/hackrank/algorithm/implement/angryprof/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/angryprof/ResultTest.java) |
 | | [Sherlock and The Beast](https://www.hackerrank.com/challenges/sherlock-and-the-beast)| Easy | [Result](src/main/java/hackrank/algorithm/implement/sherlock/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/sherlock/ResultTest.java) |
 | | [Utopian Tree](https://www.hackerrank.com/challenges/utopian-tree)| Easy | [Result](src/main/java/hackrank/algorithm/implement/utopian/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/utopian/ResultTest.java) |
@@ -110,6 +109,7 @@ Note: Work in progress to update all existing solutions.
 | | [ACM ICPC Team](https://www.hackerrank.com/challenges/acm-icpc-team) | Easy | [Result](src/main/java/hackrank/algorithm/implement/team/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/team/ResultTest.java) |
 | | [Extra Long Factorial](https://www.hackerrank.com/challenges/extra-long-factorials) | Medium | [Result](src/main/java/hackrank/algorithm/implement/factorial/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/factorial/ResultTest.java) |
 | | [Taum and B'day Challenge](https://www.hackerrank.com/challenges/taum-and-bday) | Easy | [Result](src/main/java/hackrank/algorithm/implement/bday/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/bday/ResultTest.java) |
+| | [Time in Words](https://www.hackerrank.com/challenges/the-time-in-words) | Medium | [Result](src/main/java/hackrank/algorithm/implement/time/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/time/ResultTest.java) |
 
 ## Data Structures
 
