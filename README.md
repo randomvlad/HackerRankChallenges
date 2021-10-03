@@ -72,8 +72,7 @@ Total problems solved: 73
 | | Candies | Moderate | [Problem](https://www.hackerrank.com/challenges/candies) | [Solution](src/main/java/hackrank/algorithm/dynamic/candy/Solution.java) |
 | | Stock Maximize | Moderate | [Problem](https://www.hackerrank.com/challenges/stockmax) | [Solution](src/main/java/hackrank/algorithm/dynamic/maxstock/Solution.java) |
 | | | | |
-| __Bit Manipulation (3):__ | | | | |
-| | Maximizing XOR | Easy | [Problem](https://www.hackerrank.com/challenges/maximizing-xor) | [Solution](src/main/java/hackrank/algorithm/bit/maxxor/Solution.java) |
+| __Bit Manipulation (2):__ | | | | |
 | | Sansa and XOR | Moderate | [Problem](https://www.hackerrank.com/challenges/sansa-and-xor) | [Solution](src/main/java/hackrank/algorithm/bit/sansa/Solution.java) |
 | | Flipping Bits | Easy | [Problem](https://www.hackerrank.com/challenges/flipping-bits) | [Solution](src/main/java/hackrank/algorithm/bit/flip/Solution.java) |
 
@@ -109,6 +108,8 @@ Note: Work in progress to update all existing solutions.
 | | [Matrix Layer Rotation](https://www.hackerrank.com/challenges/matrix-rotation-algo) | Hard | [Result](src/main/java/hackrank/algorithm/implement/rotate/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/rotate/ResultTest.java) |
 | __Bit Manipulation (1):__ | | | | 
 | | [Lonely Integer](https://www.hackerrank.com/challenges/lonely-integer) | Easy | [Result](src/main/java/hackrank/algorithm/bit/lonely/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/lonely/ResultTest.java) |
+| | [Maximizing XOR](https://www.hackerrank.com/challenges/maximizing-xor) | Easy | [Result](src/main/java/hackrank/algorithm/bit/maxxor/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/maxxor/ResultTest.java) |
+
 ## Data Structures
 
 | Category | Problem | Difficulty | Solution |
