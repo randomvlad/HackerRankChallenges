@@ -72,9 +72,8 @@ Total problems solved: 73
 | | Candies | Moderate | [Problem](https://www.hackerrank.com/challenges/candies) | [Solution](src/main/java/hackrank/algorithm/dynamic/candy/Solution.java) |
 | | Stock Maximize | Moderate | [Problem](https://www.hackerrank.com/challenges/stockmax) | [Solution](src/main/java/hackrank/algorithm/dynamic/maxstock/Solution.java) |
 | | | | |
-| __Bit Manipulation (2):__ | | | | |
+| __Bit Manipulation (1):__ | | | | |
 | | Sansa and XOR | Moderate | [Problem](https://www.hackerrank.com/challenges/sansa-and-xor) | [Solution](src/main/java/hackrank/algorithm/bit/sansa/Solution.java) |
-| | Flipping Bits | Easy | [Problem](https://www.hackerrank.com/challenges/flipping-bits) | [Solution](src/main/java/hackrank/algorithm/bit/flip/Solution.java) |
 
 ---
 
@@ -106,9 +105,10 @@ Note: Work in progress to update all existing solutions.
 | | [Taum and B'day Challenge](https://www.hackerrank.com/challenges/taum-and-bday) | Easy | [Result](src/main/java/hackrank/algorithm/implement/bday/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/bday/ResultTest.java) |
 | | [Time in Words](https://www.hackerrank.com/challenges/the-time-in-words) | Medium | [Result](src/main/java/hackrank/algorithm/implement/time/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/time/ResultTest.java) |
 | | [Matrix Layer Rotation](https://www.hackerrank.com/challenges/matrix-rotation-algo) | Hard | [Result](src/main/java/hackrank/algorithm/implement/rotate/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/rotate/ResultTest.java) |
-| __Bit Manipulation (1):__ | | | | 
+| __Bit Manipulation (3):__ | | | | 
 | | [Lonely Integer](https://www.hackerrank.com/challenges/lonely-integer) | Easy | [Result](src/main/java/hackrank/algorithm/bit/lonely/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/lonely/ResultTest.java) |
 | | [Maximizing XOR](https://www.hackerrank.com/challenges/maximizing-xor) | Easy | [Result](src/main/java/hackrank/algorithm/bit/maxxor/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/maxxor/ResultTest.java) |
+| | [Flipping Bits](https://www.hackerrank.com/challenges/flipping-bits) | Easy | [Result](src/main/java/hackrank/algorithm/bit/flip/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/flip/ResultTest.java) |
 
 ## Data Structures
 
