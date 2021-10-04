@@ -2,11 +2,64 @@
 
 Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/EvilNerdyOwl)) for fun, but also to stay
 sharp and brush up on Computer Science fundamentals that so frequently pop up in FAANG style tech interviews. Solutions
-are coded in Java 8 and pass all available tests to earn full points on each problem. Please note that when copy pasting
-the code into HackerRank's UI, the first line of package declaration needs to be deleted (HackerRank does not allow
-package names).
+are coded in Java 8 and pass all available tests to earn full points.
+
+## Unit Tests
+
+Each solution's `Result.java` class comes with a corresponding set of unit tests.
+Using [Junit 5](https://junit.org/junit5/docs/current/user-guide/) along with [AssertJ](https://assertj.github.io/doc/)
+library for its convenient and fluent assertions. Test method names follow naming standard as
+outlined [here](https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html).
+
+# Solutions
 
 Total problems solved: 73
+
+## Algorithms
+
+| Category | Problem | Difficulty | Solution |
+| --- | --- |:---:| --- |
+| __Implementation (18):__ | | | | 
+| | [Angry Professor](https://www.hackerrank.com/challenges/angry-professor)| Easy | [Result](src/main/java/hackrank/algorithm/implement/angryprof/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/angryprof/ResultTest.java) |
+| | [Sherlock and The Beast](https://www.hackerrank.com/challenges/sherlock-and-the-beast)| Easy | [Result](src/main/java/hackrank/algorithm/implement/sherlock/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/sherlock/ResultTest.java) |
+| | [Utopian Tree](https://www.hackerrank.com/challenges/utopian-tree)| Easy | [Result](src/main/java/hackrank/algorithm/implement/utopian/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/utopian/ResultTest.java) |
+| | [Find Digits](https://www.hackerrank.com/challenges/find-digits)| Easy | [Result](src/main/java/hackrank/algorithm/implement/digit/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/digit/ResultTest.java) |
+| | [Sherlock and Squares](https://www.hackerrank.com/challenges/sherlock-and-squares) | Easy | [Result](src/main/java/hackrank/algorithm/implement/squares/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/squares/ResultTest.java) |
+| | [Service Lane](https://www.hackerrank.com/challenges/service-lane)| Easy | [Result](src/main/java/hackrank/algorithm/implement/lane/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/lane/ResultTest.java) |
+| | [Bigger is Greater](https://www.hackerrank.com/challenges/bigger-is-greater) | Medium | [Result](src/main/java/hackrank/algorithm/implement/bigger/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/bigger/ResultTest.java) |
+| | [Cut the Sticks](https://www.hackerrank.com/challenges/cut-the-sticks)| Easy | [Result](src/main/java/hackrank/algorithm/implement/stick/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/stick/ResultTest.java) |
+| | [Chocolate Feast](https://www.hackerrank.com/challenges/chocolate-feast)| Easy | [Result](src/main/java/hackrank/algorithm/implement/chocolate/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/chocolate/ResultTest.java) |
+| | [Caesar Cipher](https://www.hackerrank.com/challenges/caesar-cipher-1) | Easy | [Result](src/main/java/hackrank/algorithm/implement/caesar/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/caesar/ResultTest.java) |
+| | [Grid Search](https://www.hackerrank.com/challenges/the-grid-search)| Medium | [Result](src/main/java/hackrank/algorithm/implement/grid/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/grid/ResultTest.java) |
+| | [Cavity Map](https://www.hackerrank.com/challenges/cavity-map)| Easy | [Result](src/main/java/hackrank/algorithm/implement/cavity/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/cavity/ResultTest.java) |
+| | [Manasa and Stones](https://www.hackerrank.com/challenges/manasa-and-stones) | Easy | [Result](src/main/java/hackrank/algorithm/implement/stones/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/stones/ResultTest.java) |
+| | [Library Fine](https://www.hackerrank.com/challenges/library-fine) | Easy | [Result](src/main/java/hackrank/algorithm/implement/fine/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/fine/ResultTest.java) |
+| | [ACM ICPC Team](https://www.hackerrank.com/challenges/acm-icpc-team) | Easy | [Result](src/main/java/hackrank/algorithm/implement/team/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/team/ResultTest.java) |
+| | [Extra Long Factorial](https://www.hackerrank.com/challenges/extra-long-factorials) | Medium | [Result](src/main/java/hackrank/algorithm/implement/factorial/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/factorial/ResultTest.java) |
+| | [Taum and B'day Challenge](https://www.hackerrank.com/challenges/taum-and-bday) | Easy | [Result](src/main/java/hackrank/algorithm/implement/bday/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/bday/ResultTest.java) |
+| | [Time in Words](https://www.hackerrank.com/challenges/the-time-in-words) | Medium | [Result](src/main/java/hackrank/algorithm/implement/time/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/time/ResultTest.java) |
+| | [Matrix Layer Rotation](https://www.hackerrank.com/challenges/matrix-rotation-algo) | Hard | [Result](src/main/java/hackrank/algorithm/implement/rotate/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/rotate/ResultTest.java) |
+| __Bit Manipulation (4):__ | | | | 
+| | [Lonely Integer](https://www.hackerrank.com/challenges/lonely-integer) | Easy | [Result](src/main/java/hackrank/algorithm/bit/lonely/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/lonely/ResultTest.java) |
+| | [Maximizing XOR](https://www.hackerrank.com/challenges/maximizing-xor) | Easy | [Result](src/main/java/hackrank/algorithm/bit/maxxor/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/maxxor/ResultTest.java) |
+| | [Flipping Bits](https://www.hackerrank.com/challenges/flipping-bits) | Easy | [Result](src/main/java/hackrank/algorithm/bit/flip/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/flip/ResultTest.java) |
+| | [Sansa and XOR](https://www.hackerrank.com/challenges/sansa-and-xor) | Medium | [Result](src/main/java/hackrank/algorithm/bit/sansa/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/sansa/ResultTest.java) |
+
+## Data Structures
+
+| Category | Problem | Difficulty | Solution |
+| --- | --- |:---:| --- |
+| __Arrays (1):__ | | | |
+| | [Sparse Arrays](https://www.hackerrank.com/challenges/sparse-arrays) | Medium | [Result](src/main/java/hackrank/datastruct/array/sparse/Result.java) - [Unit Test](src/test/java/hackrank/datastruct/array/sparse/ResultTest.java) |
+| | | | | 
+| __Heap (1):__ | | | | 
+| | [Find the Running Median](https://www.hackerrank.com/challenges/find-the-running-median) | Hard | [Result](src/main/java/hackrank/datastruct/heap/runningmedian/Result.java) - [Unit Test](src/test/java/hackrank/datastruct/heap/runningmedian/ResultTest.java) |
+
+---
+
+# Solutions (Old Format)
+
+TODO: Convert each problem to new format and add unit tests.
 
 ## Algorithms
 
@@ -71,49 +124,3 @@ Total problems solved: 73
 | | Coin Change | Moderate | [Problem](https://www.hackerrank.com/challenges/coin-change) | [Solution](src/main/java/hackrank/algorithm/dynamic/coin/Solution.java) |
 | | Candies | Moderate | [Problem](https://www.hackerrank.com/challenges/candies) | [Solution](src/main/java/hackrank/algorithm/dynamic/candy/Solution.java) |
 | | Stock Maximize | Moderate | [Problem](https://www.hackerrank.com/challenges/stockmax) | [Solution](src/main/java/hackrank/algorithm/dynamic/maxstock/Solution.java) |
-
----
-
-# Version 2.0 (WIP)
-
-Note: Work in progress to update all existing solutions.
-
-## Algorithms
-
-| Category | Problem | Difficulty | Solution |
-| --- | --- |:---:| --- |
-| __Implementation (18):__ | | | | 
-| | [Angry Professor](https://www.hackerrank.com/challenges/angry-professor)| Easy | [Result](src/main/java/hackrank/algorithm/implement/angryprof/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/angryprof/ResultTest.java) |
-| | [Sherlock and The Beast](https://www.hackerrank.com/challenges/sherlock-and-the-beast)| Easy | [Result](src/main/java/hackrank/algorithm/implement/sherlock/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/sherlock/ResultTest.java) |
-| | [Utopian Tree](https://www.hackerrank.com/challenges/utopian-tree)| Easy | [Result](src/main/java/hackrank/algorithm/implement/utopian/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/utopian/ResultTest.java) |
-| | [Find Digits](https://www.hackerrank.com/challenges/find-digits)| Easy | [Result](src/main/java/hackrank/algorithm/implement/digit/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/digit/ResultTest.java) |
-| | [Sherlock and Squares](https://www.hackerrank.com/challenges/sherlock-and-squares) | Easy | [Result](src/main/java/hackrank/algorithm/implement/squares/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/squares/ResultTest.java) |
-| | [Service Lane](https://www.hackerrank.com/challenges/service-lane)| Easy | [Result](src/main/java/hackrank/algorithm/implement/lane/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/lane/ResultTest.java) |
-| | [Bigger is Greater](https://www.hackerrank.com/challenges/bigger-is-greater) | Medium | [Result](src/main/java/hackrank/algorithm/implement/bigger/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/bigger/ResultTest.java) |
-| | [Cut the Sticks](https://www.hackerrank.com/challenges/cut-the-sticks)| Easy | [Result](src/main/java/hackrank/algorithm/implement/stick/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/stick/ResultTest.java) |
-| | [Chocolate Feast](https://www.hackerrank.com/challenges/chocolate-feast)| Easy | [Result](src/main/java/hackrank/algorithm/implement/chocolate/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/chocolate/ResultTest.java) |
-| | [Caesar Cipher](https://www.hackerrank.com/challenges/caesar-cipher-1) | Easy | [Result](src/main/java/hackrank/algorithm/implement/caesar/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/caesar/ResultTest.java) |
-| | [Grid Search](https://www.hackerrank.com/challenges/the-grid-search)| Medium | [Result](src/main/java/hackrank/algorithm/implement/grid/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/grid/ResultTest.java) |
-| | [Cavity Map](https://www.hackerrank.com/challenges/cavity-map)| Easy | [Result](src/main/java/hackrank/algorithm/implement/cavity/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/cavity/ResultTest.java) |
-| | [Manasa and Stones](https://www.hackerrank.com/challenges/manasa-and-stones) | Easy | [Result](src/main/java/hackrank/algorithm/implement/stones/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/stones/ResultTest.java) |
-| | [Library Fine](https://www.hackerrank.com/challenges/library-fine) | Easy | [Result](src/main/java/hackrank/algorithm/implement/fine/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/fine/ResultTest.java) |
-| | [ACM ICPC Team](https://www.hackerrank.com/challenges/acm-icpc-team) | Easy | [Result](src/main/java/hackrank/algorithm/implement/team/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/team/ResultTest.java) |
-| | [Extra Long Factorial](https://www.hackerrank.com/challenges/extra-long-factorials) | Medium | [Result](src/main/java/hackrank/algorithm/implement/factorial/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/factorial/ResultTest.java) |
-| | [Taum and B'day Challenge](https://www.hackerrank.com/challenges/taum-and-bday) | Easy | [Result](src/main/java/hackrank/algorithm/implement/bday/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/bday/ResultTest.java) |
-| | [Time in Words](https://www.hackerrank.com/challenges/the-time-in-words) | Medium | [Result](src/main/java/hackrank/algorithm/implement/time/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/time/ResultTest.java) |
-| | [Matrix Layer Rotation](https://www.hackerrank.com/challenges/matrix-rotation-algo) | Hard | [Result](src/main/java/hackrank/algorithm/implement/rotate/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/rotate/ResultTest.java) |
-| __Bit Manipulation (4):__ | | | | 
-| | [Lonely Integer](https://www.hackerrank.com/challenges/lonely-integer) | Easy | [Result](src/main/java/hackrank/algorithm/bit/lonely/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/lonely/ResultTest.java) |
-| | [Maximizing XOR](https://www.hackerrank.com/challenges/maximizing-xor) | Easy | [Result](src/main/java/hackrank/algorithm/bit/maxxor/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/maxxor/ResultTest.java) |
-| | [Flipping Bits](https://www.hackerrank.com/challenges/flipping-bits) | Easy | [Result](src/main/java/hackrank/algorithm/bit/flip/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/flip/ResultTest.java) |
-| | [Sansa and XOR](https://www.hackerrank.com/challenges/sansa-and-xor) | Medium | [Result](src/main/java/hackrank/algorithm/bit/sansa/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/sansa/ResultTest.java) |
-
-## Data Structures
-
-| Category | Problem | Difficulty | Solution |
-| --- | --- |:---:| --- |
-| __Arrays (1):__ | | | |
-| | [Sparse Arrays](https://www.hackerrank.com/challenges/sparse-arrays) | Medium | [Result](src/main/java/hackrank/datastruct/array/sparse/Result.java) - [Unit Test](src/test/java/hackrank/datastruct/array/sparse/ResultTest.java) |
-| | | | | 
-| __Heap (1):__ | | | | 
-| | [Find the Running Median](https://www.hackerrank.com/challenges/find-the-running-median) | Hard | [Result](src/main/java/hackrank/datastruct/heap/runningmedian/Result.java) - [Unit Test](src/test/java/hackrank/datastruct/heap/runningmedian/ResultTest.java) |
