@@ -7,7 +7,7 @@ are coded in Java 8 and pass all available tests to earn full points.
 ## Unit Tests
 
 Each solution's `Result.java` class comes with a corresponding set of unit tests.
-Using [Junit 5](https://junit.org/junit5/docs/current/user-guide/) along with [AssertJ](https://assertj.github.io/doc/)
+Using [JUnit 5](https://junit.org/junit5/docs/current/user-guide/) along with [AssertJ](https://assertj.github.io/doc/)
 library for its convenient and fluent assertions. Test method names follow naming standard as
 outlined [here](https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html).
 
@@ -39,6 +39,10 @@ Total problems solved: 73
 | | [Taum and B'day Challenge](https://www.hackerrank.com/challenges/taum-and-bday) | Easy | [Result](src/main/java/hackrank/algorithm/implement/bday/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/bday/ResultTest.java) |
 | | [Time in Words](https://www.hackerrank.com/challenges/the-time-in-words) | Medium | [Result](src/main/java/hackrank/algorithm/implement/time/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/time/ResultTest.java) |
 | | [Matrix Layer Rotation](https://www.hackerrank.com/challenges/matrix-rotation-algo) | Hard | [Result](src/main/java/hackrank/algorithm/implement/rotate/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/rotate/ResultTest.java) |
+| | | | |
+| __Strings (1):__ | | | |
+| | [Funny String](https://www.hackerrank.com/challenges/funny-string) | Easy | [Result](src/main/java/hackrank/algorithm/string/funny/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/funny/ResultTest.java) |
+| | | | | 
 | __Bit Manipulation (4):__ | | | | 
 | | [Lonely Integer](https://www.hackerrank.com/challenges/lonely-integer) | Easy | [Result](src/main/java/hackrank/algorithm/bit/lonely/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/lonely/ResultTest.java) |
 | | [Maximizing XOR](https://www.hackerrank.com/challenges/maximizing-xor) | Easy | [Result](src/main/java/hackrank/algorithm/bit/maxxor/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/maxxor/ResultTest.java) |
@@ -65,8 +69,7 @@ TODO: Convert each problem to new format and add unit tests.
 
 | Category | Name | Difficulty | Problem | Solution |
 | --- | --- |:---:| --- | --- |
-| __Strings (12):__ | | | | |
-| | Funny String | Easy | [Problem](https://www.hackerrank.com/challenges/funny-string) | [Solution](src/main/java/hackrank/algorithm/string/funny/Solution.java) |
+| __Strings (11):__ | | | | |
 | | Pangrams | Easy | [Problem](https://www.hackerrank.com/challenges/pangrams) | [Solution](src/main/java/hackrank/algorithm/string/pangram/Solution.java) |
 | | Alternating Characters | Easy | [Problem](https://www.hackerrank.com/challenges/alternating-characters) | [Solution](src/main/java/hackrank/algorithm/string/alternate/Solution.java) |
 | | Game of Thrones | Easy | [Problem](https://www.hackerrank.com/challenges/game-of-thrones) | [Solution](src/main/java/hackrank/algorithm/string/thrones/Solution.java) |  
