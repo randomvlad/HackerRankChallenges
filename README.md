@@ -40,8 +40,9 @@ Total problems solved: 73
 | | [Time in Words](https://www.hackerrank.com/challenges/the-time-in-words) | Medium | [Result](src/main/java/hackrank/algorithm/implement/time/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/time/ResultTest.java) |
 | | [Matrix Layer Rotation](https://www.hackerrank.com/challenges/matrix-rotation-algo) | Hard | [Result](src/main/java/hackrank/algorithm/implement/rotate/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/rotate/ResultTest.java) |
 | | | | |
-| __Strings (1):__ | | | |
+| __Strings (2):__ | | | |
 | | [Funny String](https://www.hackerrank.com/challenges/funny-string) | Easy | [Result](src/main/java/hackrank/algorithm/string/funny/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/funny/ResultTest.java) |
+| | [Pangrams](https://www.hackerrank.com/challenges/pangrams) | Easy | [Result](src/main/java/hackrank/algorithm/string/pangram/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/pangram/ResultTest.java) |
 | | | | | 
 | __Bit Manipulation (4):__ | | | | 
 | | [Lonely Integer](https://www.hackerrank.com/challenges/lonely-integer) | Easy | [Result](src/main/java/hackrank/algorithm/bit/lonely/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/lonely/ResultTest.java) |
@@ -69,8 +70,7 @@ TODO: Convert each problem to new format and add unit tests.
 
 | Category | Name | Difficulty | Problem | Solution |
 | --- | --- |:---:| --- | --- |
-| __Strings (11):__ | | | | |
-| | Pangrams | Easy | [Problem](https://www.hackerrank.com/challenges/pangrams) | [Solution](src/main/java/hackrank/algorithm/string/pangram/Solution.java) |
+| __Strings (10):__ | | | | |
 | | Alternating Characters | Easy | [Problem](https://www.hackerrank.com/challenges/alternating-characters) | [Solution](src/main/java/hackrank/algorithm/string/alternate/Solution.java) |
 | | Game of Thrones | Easy | [Problem](https://www.hackerrank.com/challenges/game-of-thrones) | [Solution](src/main/java/hackrank/algorithm/string/thrones/Solution.java) |  
 | | Gemstones | Easy | [Problem](https://www.hackerrank.com/challenges/gem-stones) | [Solution](src/main/java/hackrank/algorithm/string/gems/Solution.java) |
