@@ -40,10 +40,11 @@ Total problems solved: 73
 | | [Time in Words](https://www.hackerrank.com/challenges/the-time-in-words) | Medium | [Result](src/main/java/hackrank/algorithm/implement/time/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/time/ResultTest.java) |
 | | [Matrix Layer Rotation](https://www.hackerrank.com/challenges/matrix-rotation-algo) | Hard | [Result](src/main/java/hackrank/algorithm/implement/rotate/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/rotate/ResultTest.java) |
 | | | | |
-| __Strings (3):__ | | | |
+| __Strings (4):__ | | | |
 | | [Funny String](https://www.hackerrank.com/challenges/funny-string) | Easy | [Result](src/main/java/hackrank/algorithm/string/funny/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/funny/ResultTest.java) |
 | | [Pangrams](https://www.hackerrank.com/challenges/pangrams) | Easy | [Result](src/main/java/hackrank/algorithm/string/pangram/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/pangram/ResultTest.java) |
 | | [Alternating Characters](https://www.hackerrank.com/challenges/alternating-characters) | Easy | [Result](src/main/java/hackrank/algorithm/string/alternate/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/alternate/ResultTest.java) |
+| | [Two Strings](https://www.hackerrank.com/challenges/two-strings) | Easy | [Result](src/main/java/hackrank/algorithm/string/two/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/two/ResultTest.java)|
 | | | | | 
 | __Bit Manipulation (4):__ | | | | 
 | | [Lonely Integer](https://www.hackerrank.com/challenges/lonely-integer) | Easy | [Result](src/main/java/hackrank/algorithm/bit/lonely/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/lonely/ResultTest.java) |
@@ -71,12 +72,11 @@ TODO: Convert each problem to new format and add unit tests.
 
 | Category | Name | Difficulty | Problem | Solution |
 | --- | --- |:---:| --- | --- |
-| __Strings (9):__ | | | | |
+| __Strings (8):__ | | | | |
 | | Game of Thrones | Easy | [Problem](https://www.hackerrank.com/challenges/game-of-thrones) | [Solution](src/main/java/hackrank/algorithm/string/thrones/Solution.java) |  
 | | Gemstones | Easy | [Problem](https://www.hackerrank.com/challenges/gem-stones) | [Solution](src/main/java/hackrank/algorithm/string/gems/Solution.java) |
 | | Make it Anagram | Easy | [Problem](https://www.hackerrank.com/challenges/make-it-anagram) | [Solution](src/main/java/hackrank/algorithm/string/mkanagram/Solution.java) |
 | | Anagram | Easy | [Problem](https://www.hackerrank.com/challenges/anagram) | [Solution](src/main/java/hackrank/algorithm/string/anagram/Solution.java) |
-| | Two Strings | Moderate | [Problem](https://www.hackerrank.com/challenges/two-strings) | [Solution](src/main/java/hackrank/algorithm/string/two/Solution.java) |
 | | Sherlock and Anagrams | Moderate | [Problem](https://www.hackerrank.com/challenges/sherlock-and-anagrams) | [Solution](src/main/java/hackrank/algorithm/string/shergram/Solution.java) |
 | | Palindrome Index | Easy | [Problem](https://www.hackerrank.com/challenges/palindrome-index) | [Solution](src/main/java/hackrank/algorithm/string/palindrome/Solution.java) |
 | | Common Child | Difficult | [Problem](https://www.hackerrank.com/challenges/common-child) | [Solution](src/main/java/hackrank/algorithm/string/child/Solution.java) |
