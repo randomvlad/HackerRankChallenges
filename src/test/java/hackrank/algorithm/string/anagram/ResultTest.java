@@ -13,8 +13,20 @@ class ResultTest {
     }
 
     @Test
+    void anagram_OddLength_NotPossible() {
+        int changes = Result.anagram("abc");
+        assertThat(changes).isEqualTo(-1);
+    }
+
+    @Test
     void anagram_ChangeAllLeftOrRight_ThreeChanges() {
         int changes = Result.anagram("aaabbb");
         assertThat(changes).isEqualTo(3);
+    }
+
+    @Test
+    void anagram_NeedsFive_FiveChanges() {
+        int changes = Result.anagram("fdhlvosfpafhalll");
+        assertThat(changes).isEqualTo(5);
     }
 }

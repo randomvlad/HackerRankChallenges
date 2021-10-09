@@ -27,7 +27,7 @@ public class Result {
         int freebiesSecond = 0;
         int i = 0;
         int j = 0;
-        while (i < first.length) {
+        while (i < first.length && j < second.length) {
 
             if (first[i] == second[j]) {
                 i++;
