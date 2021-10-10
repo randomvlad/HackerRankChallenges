@@ -50,6 +50,7 @@ Total problems solved: 73
 | | [Gemstones](https://www.hackerrank.com/challenges/gem-stones) | Easy | [Result](src/main/java/hackrank/algorithm/string/gems/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/gems/ResultTest.java) |
 | | [Making Anagrams](https://www.hackerrank.com/challenges/making-anagrams) | Easy | [Result](src/main/java/hackrank/algorithm/string/mkanagram/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/mkanagram/ResultTest.java) |
 | | [Anagram](https://www.hackerrank.com/challenges/anagram) | Easy | [Result](src/main/java/hackrank/algorithm/string/anagram/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/anagram/ResultTest.java) |
+| | [Palindrome Index](https://www.hackerrank.com/challenges/palindrome-index) | Easy | [Result](src/main/java/hackrank/algorithm/string/palindrome/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/palindrome/ResultTest.java) |
 | | | | | 
 | __Bit Manipulation (4):__ | | | | 
 | | [Lonely Integer](https://www.hackerrank.com/challenges/lonely-integer) | Easy | [Result](src/main/java/hackrank/algorithm/bit/lonely/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/lonely/ResultTest.java) |
@@ -77,8 +78,7 @@ TODO: Convert each problem to new format and add unit tests.
 
 | Category | Name | Difficulty | Problem | Solution |
 | --- | --- |:---:| --- | --- |
-| __Strings (3):__ | | | | |
-| | Palindrome Index | Easy | [Problem](https://www.hackerrank.com/challenges/palindrome-index) | [Solution](src/main/java/hackrank/algorithm/string/palindrome/Solution.java) |
+| __Strings (2):__ | | | | |
 | | Common Child | Difficult | [Problem](https://www.hackerrank.com/challenges/common-child) | [Solution](src/main/java/hackrank/algorithm/string/child/Solution.java) |
 | | Sherlock and Valid Strings | Difficult | [Problem](https://www.hackerrank.com/challenges/sherlock-and-valid-string) | [Solution](src/main/java/hackrank/algorithm/string/sherlock/Solution.java) |
 | | | | |
@@ -92,7 +92,7 @@ TODO: Convert each problem to new format and add unit tests.
 | | Counting Sort Part 2 | Easy | [Problem](https://www.hackerrank.com/challenges/countingsort2) | [Solution](src/main/java/hackrank/algorithm/sort/count2/Solution.java) |
 | | Counting Sort Part 3 | Easy | [Problem](https://www.hackerrank.com/challenges/countingsort3) | [Solution](src/main/java/hackrank/algorithm/sort/count3/Solution.java) |
 | | Counting Sort Part 4 | Moderate | [Problem](https://www.hackerrank.com/challenges/countingsort4) | [Solution](src/main/java/hackrank/algorithm/sort/count4/Solution.java) |
-| | | | | 
+| | | | |
 | __Search (6):__ | | | | | 
 | | Sherlock and Array | Easy | [Problem](https://www.hackerrank.com/challenges/sherlock-and-array) | [Solution](src/main/java/hackrank/algorithm/search/sherlock/Solution.java) |
 | | Ice Cream Parlor | Easy | [Problem](https://www.hackerrank.com/challenges/icecream-parlor) | [Solution](src/main/java/hackrank/algorithm/search/icecream/Solution.java) |  
@@ -100,7 +100,7 @@ TODO: Convert each problem to new format and add unit tests.
 | | Connected Cells | Moderate | [Problem](https://www.hackerrank.com/challenges/connected-cell-in-a-grid) | [Solution](src/main/java/hackrank/algorithm/search/connected/Solution.java) |
 | | Count Luck | Easy | [Problem](https://www.hackerrank.com/challenges/count-luck) | [Solution](src/main/java/hackrank/algorithm/search/luck/Solution.java) |
 | | Cut the Tree | Moderate | [Problem](https://www.hackerrank.com/challenges/cut-the-tree) | [Solution](src/main/java/hackrank/algorithm/search/cuttree/Solution.java) |
-| | | | | 
+| | | | |
 | __Graph Theory (7):__ | | | | | 
 | | Breadth Shortest Reach | Moderate | [Problem](https://www.hackerrank.com/challenges/bfsshortreach) | [Solution](src/main/java/hackrank/algorithm/graph/bfsreach/Solution.java) |
 | | Dijkstra Shortest Reach | Difficult | [Problem](https://www.hackerrank.com/challenges/dijkstrashortreach) | [Solution](src/main/java/hackrank/algorithm/graph/dijkstrareach/Solution.java) |
@@ -109,7 +109,7 @@ TODO: Convert each problem to new format and add unit tests.
 | | Even Tree | Moderate | [Problem](https://www.hackerrank.com/challenges/even-tree) | [Solution](src/main/java/hackrank/algorithm/graph/eventree/Solution.java) |
 | | Journey to the Moon | Moderate | [Problem](https://www.hackerrank.com/challenges/journey-to-the-moon) | [Solution](src/main/java/hackrank/algorithm/graph/moon/Solution.java) |  
 | | Snakes and Ladders | Easy | [Problem](https://www.hackerrank.com/challenges/the-quickest-way-up) | [Solution](src/main/java/hackrank/algorithm/graph/snake/Solution.java) |
-| | | | | 
+| | | | |
 | __Greedy (9):__ | | | | |
 | | Grid Challenge | Easy | [Problem](https://www.hackerrank.com/challenges/grid-challenge) | [Solution](src/main/java/hackrank/algorithm/greedy/grid/Solution.java) |
 | | Jim and the Orders | Easy | [Problem](https://www.hackerrank.com/challenges/jim-and-the-orders) | [Solution](src/main/java/hackrank/algorithm/greedy/jimorder/Solution.java) |   
@@ -120,7 +120,7 @@ TODO: Convert each problem to new format and add unit tests.
 | | Flowers | Moderate | [Problem](https://www.hackerrank.com/challenges/flowers) | [Solution](src/main/java/hackrank/algorithm/greedy/flowers/Solution.java) |
 | | Cutting Boards | Moderate | [Problem](https://www.hackerrank.com/challenges/board-cutting) | [Solution](src/main/java/hackrank/algorithm/greedy/boardcut/Solution.java) |
 | | Max Min | Moderate | [Problem](https://www.hackerrank.com/challenges/angry-children) | [Solution](src/main/java/hackrank/algorithm/greedy/maxmin/Solution.java) |
-| | | | | 
+| | | | |
 | __Dynamic Programming (5):__ | | | | |
 | | Fibonacci Modified | Moderate | [Problem](https://www.hackerrank.com/challenges/fibonacci-modified) | [Solution](src/main/java/hackrank/algorithm/dynamic/fibmod/Solution.java) |
 | | The Maximum Subarray | Easy | [Problem](https://www.hackerrank.com/challenges/maxsubarray) | [Solution](src/main/java/hackrank/algorithm/dynamic/maxsub/Solution.java) |
