@@ -4,14 +4,12 @@ Playing with HackerRank challenges ([my profile](https://www.hackerrank.com/Evil
 sharp and brush up on Computer Science fundamentals that so frequently pop up in FAANG style tech interviews. Solutions
 are coded in Java 8 and pass all available tests to earn full points.
 
-## Unit Tests
-
 Each solution's `Result.java` class comes with a corresponding set of unit tests.
 Using [JUnit 5](https://junit.org/junit5/docs/current/user-guide/) along with [AssertJ](https://assertj.github.io/doc/)
 library for its convenient and fluent assertions. Test method names follow naming standard as
 outlined [here](https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html).
 
-# Solutions
+# Problems
 
 Total problems solved: 73
 
@@ -40,7 +38,7 @@ Total problems solved: 73
 | | [Time in Words](https://www.hackerrank.com/challenges/the-time-in-words) | Medium | [Result](src/main/java/hackrank/algorithm/implement/time/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/time/ResultTest.java) |
 | | [Matrix Layer Rotation](https://www.hackerrank.com/challenges/matrix-rotation-algo) | Hard | [Result](src/main/java/hackrank/algorithm/implement/rotate/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/implement/rotate/ResultTest.java) |
 | | | | |
-| __Strings (10):__ | | | |
+| __Strings (11):__ | | | |
 | | [Funny String](https://www.hackerrank.com/challenges/funny-string) | Easy | [Result](src/main/java/hackrank/algorithm/string/funny/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/funny/ResultTest.java) |
 | | [Pangrams](https://www.hackerrank.com/challenges/pangrams) | Easy | [Result](src/main/java/hackrank/algorithm/string/pangram/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/pangram/ResultTest.java) |
 | | [Alternating Characters](https://www.hackerrank.com/challenges/alternating-characters) | Easy | [Result](src/main/java/hackrank/algorithm/string/alternate/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/alternate/ResultTest.java) |
@@ -52,6 +50,7 @@ Total problems solved: 73
 | | [Anagram](https://www.hackerrank.com/challenges/anagram) | Easy | [Result](src/main/java/hackrank/algorithm/string/anagram/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/anagram/ResultTest.java) |
 | | [Palindrome Index](https://www.hackerrank.com/challenges/palindrome-index) | Easy | [Result](src/main/java/hackrank/algorithm/string/palindrome/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/palindrome/ResultTest.java) |
 | | [Common Child](https://www.hackerrank.com/challenges/common-child) | Medium | [Result](src/main/java/hackrank/algorithm/string/child/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/child/ResultTest.java) |
+| | [Sherlock and the Valid String](https://www.hackerrank.com/challenges/sherlock-and-valid-string) | Medium | [Result](src/main/java/hackrank/algorithm/string/sherlock/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/string/sherlock/ResultTest.java) |
 | | | | | 
 | __Bit Manipulation (4):__ | | | | 
 | | [Lonely Integer](https://www.hackerrank.com/challenges/lonely-integer) | Easy | [Result](src/main/java/hackrank/algorithm/bit/lonely/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/lonely/ResultTest.java) |
@@ -79,9 +78,6 @@ TODO: Convert each problem to new format and add unit tests.
 
 | Category | Name | Difficulty | Problem | Solution |
 | --- | --- |:---:| --- | --- |
-| __Strings (1):__ | | | | |
-| | Sherlock and Valid Strings | Medium | [Problem](https://www.hackerrank.com/challenges/sherlock-and-valid-string) | [Solution](src/main/java/hackrank/algorithm/string/sherlock/Solution.java) |
-| | | | |
 | __Sorting (9):__ | | | | |
 | | Insertion Sort Part 1 | Easy | [Problem](https://www.hackerrank.com/challenges/insertionsort1) | [Solution](src/main/java/hackrank/algorithm/sort/insert1/Solution.java) |
 | | Insertion Sort Part 2 | Easy | [Problem](https://www.hackerrank.com/challenges/insertionsort2) | [Solution](src/main/java/hackrank/algorithm/sort/insert2/Solution.java) |  

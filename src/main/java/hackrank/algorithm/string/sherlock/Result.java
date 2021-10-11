@@ -2,24 +2,18 @@ package hackrank.algorithm.string.sherlock;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 /**
- * Sherlock and Valid String
- *
- * @see https://www.hackerrank.com/challenges/sherlock-and-valid-string
+ * @see <a href="https://www.hackerrank.com/challenges/sherlock-and-valid-string">Sherlock and the Valid String</a>
  */
-public class Solution {
+public class Result {
 
-    public final static int ALPHABET_ENGLISH_SIZE = 26;
-
-    public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
-        String value = scanner.next();
-        scanner.close();
-
-        Map<Character, Integer> counts = countChars(value);
+    /**
+     * @param s lowercase letters in ASCII range a-z
+     * @return "YES" if {@code s} is a valid string, "NO"" otherwise.
+     */
+    public static String isValid(String s) {
+        Map<Character, Integer> counts = countChars(s);
 
         boolean valid = false;
         if (hasEqualCounts(counts, '-')) {
@@ -35,12 +29,12 @@ public class Solution {
             }
         }
 
-        System.out.println(valid ? "YES" : "NO");
+        return valid ? "YES" : "NO";
     }
 
     private static Map<Character, Integer> countChars(String value) {
 
-        Map<Character, Integer> counts = new HashMap<>(ALPHABET_ENGLISH_SIZE);
+        Map<Character, Integer> counts = new HashMap<>();
         for (char character : value.toCharArray()) {
             if (!counts.containsKey(character)) {
                 counts.put(character, 0);
@@ -80,5 +74,4 @@ public class Solution {
 
         return true;
     }
-
 }
