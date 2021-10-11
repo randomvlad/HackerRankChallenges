@@ -1,4 +1,4 @@
-package hackrank.algorithm.string.revshufmrg;
+package hackrank.algorithm.greedy.revshufmrg;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -8,41 +8,34 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.Scanner;
+
+// TODO: solution is incomplete and needs to be finished
 
 /**
- * Reverse Shuffle Merge Challenge
- *
- * @see https://www.hackerrank.com/challenges/reverse-shuffle-merge
+ * @see <a href="https://www.hackerrank.com/challenges/reverse-shuffle-merge">Reverse Shuffle Merge</a>
  */
-public class Solution {
+public class Result {
 
-    public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
-        String value = scanner.next();
-        scanner.close();
-
-        System.out.println(decodeSmallestLexi(value));
-    }
-
-    public static String decodeSmallestLexi(String value) {
-
-        Map<Character, Integer> counts = groupByChar(value);
+    /**
+     * @param s lowercase letters in ASCII range a-z
+     * @return string value which is the lexicographically smallest valid for {@code s}
+     */
+    public static String reverseShuffleMerge(String s) {
+        Map<Character, Integer> counts = groupByChar(s);
         Deque<Character> available = getAvailableOrdered(counts);
 
         StringBuilder smallest = new StringBuilder();
-        for (int i = value.length() - 1; i >= 0; i--) {
-            if (smallest.length() == value.length() / 2) {
+        for (int i = s.length() - 1; i >= 0; i--) {
+            if (smallest.length() == s.length() / 2) {
                 break;
             }
 
-            char c = value.charAt(i);
+            char c = s.charAt(i);
             if (c == available.peek() || counts.get(c) == 0) {
                 smallest.append(c);
                 available.remove(c);
             } else {
-                Optional<Character> nextMandatory = findNextMandatory(value, i - 1, available.peek(), counts);
+                Optional<Character> nextMandatory = findNextMandatory(s, i - 1, available.peek(), counts);
                 if (nextMandatory.isPresent()) {
                     if (c > available.peek() && c <= nextMandatory.get()) {
                         smallest.append(c);
@@ -57,7 +50,7 @@ public class Solution {
         return smallest.toString();
     }
 
-    static Optional<Character> findNextMandatory(String value, int index, char availableSmallest,
+    private static Optional<Character> findNextMandatory(String value, int index, char availableSmallest,
             Map<Character, Integer> counts) {
 
         /*
@@ -93,12 +86,12 @@ public class Solution {
         return Optional.empty();
     }
 
-    static void decrement(char c, Map<Character, Integer> counts) {
+    private static void decrement(char c, Map<Character, Integer> counts) {
         int count = counts.get(c);
         counts.put(c, count - 1);
     }
 
-    static Map<Character, Integer> groupByChar(String value) {
+    private static Map<Character, Integer> groupByChar(String value) {
 
         Map<Character, Integer> counts = new HashMap<>();
 
@@ -122,7 +115,7 @@ public class Solution {
         return counts;
     }
 
-    static Deque<Character> getAvailableOrdered(Map<Character, Integer> counts) {
+    private static Deque<Character> getAvailableOrdered(Map<Character, Integer> counts) {
 
         List<Character> chars = new ArrayList<>(counts.size());
         for (Character c : counts.keySet()) {
@@ -134,7 +127,6 @@ public class Solution {
 
         Collections.sort(chars);
 
-        return new ArrayDeque<Character>(chars);
+        return new ArrayDeque<>(chars);
     }
-
 }
