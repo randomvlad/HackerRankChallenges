@@ -57,8 +57,10 @@ Total problems solved: 73
 | | [Maximizing XOR](https://www.hackerrank.com/challenges/maximizing-xor) | Easy | [Result](src/main/java/hackrank/algorithm/bit/maxxor/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/maxxor/ResultTest.java) |
 | | [Flipping Bits](https://www.hackerrank.com/challenges/flipping-bits) | Easy | [Result](src/main/java/hackrank/algorithm/bit/flip/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/flip/ResultTest.java) |
 | | [Sansa and XOR](https://www.hackerrank.com/challenges/sansa-and-xor) | Medium | [Result](src/main/java/hackrank/algorithm/bit/sansa/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/bit/sansa/ResultTest.java) |
-| __Sorting (1):__ | | | |
+| | | | | 
+| __Sorting (2):__ | | | |
 | | [Insertion Sort Part 1](https://www.hackerrank.com/challenges/insertionsort1) | Easy | [Result](src/main/java/hackrank/algorithm/sort/insert1/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/sort/insert1/ResultTest.java) |
+| | [Insertion Sort Part 2](https://www.hackerrank.com/challenges/insertionsort2) | Easy | [Result](src/main/java/hackrank/algorithm/sort/insert2/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/sort/insert2/ResultTest.java) |
 
 ## Data Structures
 
@@ -80,8 +82,7 @@ TODO: Convert each problem to new format and add unit tests.
 
 | Category | Name | Difficulty | Problem | Solution |
 | --- | --- |:---:| --- | --- |
-| __Sorting (8):__ | | | | |
-| | Insertion Sort Part 2 | Easy | [Problem](https://www.hackerrank.com/challenges/insertionsort2) | [Solution](src/main/java/hackrank/algorithm/sort/insert2/Solution.java) |  
+| __Sorting (7):__ | | | | | 
 | | Running Time of Algorithms | Easy | [Problem](https://www.hackerrank.com/challenges/runningtime) | [Solution](src/main/java/hackrank/algorithm/sort/insertrun/Solution.java) |
 | | Quicksort Part 1 | Easy | [Problem](https://www.hackerrank.com/challenges/quicksort2) | [Solution](src/main/java/hackrank/algorithm/sort/quick/Solution.java) |
 | | Quicksort Part 2 | Moderate | [Problem](https://www.hackerrank.com/challenges/quicksort3) | [Solution](src/main/java/hackrank/algorithm/sort/quickinplace/Solution.java) |
