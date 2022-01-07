@@ -9,6 +9,10 @@ import java.util.stream.Collectors;
  */
 public class Result {
 
+    /**
+     * @param arr Unsorted list of numbers; Numbers range: 0 to 99 (inclusive)
+     * @return List of occurrence counts for numbers 0 to 99.
+     */
     public static List<Integer> countingSort(List<Integer> arr) {
         int[] counts = new int[100];
 
