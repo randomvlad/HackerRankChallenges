@@ -66,6 +66,9 @@ Total problems solved: 73
 | | [Quicksort Part 2](https://www.hackerrank.com/challenges/quicksort3) | Medium | [Result](src/main/java/hackrank/algorithm/sort/quickinplace/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/sort/quickinplace/ResultTest.java) |
 | | [Counting Sort Part 1](https://www.hackerrank.com/challenges/countingsort1) | Easy | [Result](src/main/java/hackrank/algorithm/sort/count1/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/sort/count1/ResultTest.java) |
 | | [Counting Sort Part 2](https://www.hackerrank.com/challenges/countingsort2) | Easy | [Result](src/main/java/hackrank/algorithm/sort/count2/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/sort/count2/ResultTest.java) |
+| | | | | 
+| __Dynamic Programming (1):__ | | | |
+| | [The Maximum Subarray](https://www.hackerrank.com/challenges/maxsubarray) | Medium | [Result](src/main/java/hackrank/algorithm/dynamic/maxsub/Result.java) - [Unit Test](src/test/java/hackrank/algorithm/dynamic/maxsub/ResultTest.java) |
 
 ## Data Structures
 
@@ -119,9 +122,8 @@ TODO: Convert each problem to new format and add unit tests.
 | | Cutting Boards | Moderate | [Problem](https://www.hackerrank.com/challenges/board-cutting) | [Solution](src/main/java/hackrank/algorithm/greedy/boardcut/Solution.java) |
 | | Max Min | Moderate | [Problem](https://www.hackerrank.com/challenges/angry-children) | [Solution](src/main/java/hackrank/algorithm/greedy/maxmin/Solution.java) |
 | | | | |
-| __Dynamic Programming (5):__ | | | | |
+| __Dynamic Programming (4):__ | | | | |
 | | Fibonacci Modified | Moderate | [Problem](https://www.hackerrank.com/challenges/fibonacci-modified) | [Solution](src/main/java/hackrank/algorithm/dynamic/fibmod/Solution.java) |
-| | The Maximum Subarray | Easy | [Problem](https://www.hackerrank.com/challenges/maxsubarray) | [Solution](src/main/java/hackrank/algorithm/dynamic/maxsub/Solution.java) |
 | | Coin Change | Moderate | [Problem](https://www.hackerrank.com/challenges/coin-change) | [Solution](src/main/java/hackrank/algorithm/dynamic/coin/Solution.java) |
 | | Candies | Moderate | [Problem](https://www.hackerrank.com/challenges/candies) | [Solution](src/main/java/hackrank/algorithm/dynamic/candy/Solution.java) |
 | | Stock Maximize | Moderate | [Problem](https://www.hackerrank.com/challenges/stockmax) | [Solution](src/main/java/hackrank/algorithm/dynamic/maxstock/Solution.java) |
